@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 // a = 15;
 // console.log(a);
@@ -38,10 +38,10 @@
 // console.log(typeof(answer));
 
 
-let answers = [];
+// let answers = [];
 
-answers[0] = prompt('Как вас зовут?', '');
-answers[1] = prompt('Как у вас дела?', '');
-answers[2] = prompt('Кто по жизни?', '');
+// answers[0] = prompt('Как вас зовут?', '');
+// answers[1] = prompt('Как у вас дела?', '');
+// answers[2] = prompt('Кто по жизни?', '');
 
-// document.write(answers);
+// document.wriasdte(answers);
