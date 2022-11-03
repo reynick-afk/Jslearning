@@ -100,11 +100,61 @@ let num = 50;
 
 // while (num < 55);
 
-for (let i = 1; i < 10; i++) {
-    if (i === 6) {
-        // break;
-        continue;
-    }
+// for (let i = 1; i < 10; i++) {
+//     if (i === 6) {
+//         // break;
+//         continue;
+//     }
 
-    console.log(i);
+//     console.log(i);
+// }
+
+
+/// function 
+
+// function showFirstMessage() {
+//     console.log('Hello world!');
+// }
+
+// showFirstMessage();
+
+
+
+let = num = 20;
+
+function showFirstMessage(text) {
+    console.log(text);
+    let num = 20;
 }
+
+showFirstMessage('Hello world!');
+
+console.log(num); /// не корректно так как переменная let в function локальная!!!
+
+
+// function cal(a, b) {
+//     return (a + b);
+// }
+
+
+// console.log(cal(4, 3));
+// console.log(cal(44, 34));
+
+// function ret() {
+//     let num = 50;
+//     return num;
+// }
+
+const anotherNum = ret();
+console.log(anotherNum);
+
+
+const logger = function() {
+    console.log('Hello');
+};
+
+logger();
+
+
+const calc = (a, b) =>
+    return a + b;
