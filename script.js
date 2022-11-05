@@ -86,7 +86,7 @@
 
 // Циклы
 
-let num = 50;
+// let num = 50;
 
 // while (num <= 55) {
 //     console.log(num);
@@ -120,16 +120,16 @@ let num = 50;
 
 
 
-let = num = 20;
+// let = num = 20;
 
-function showFirstMessage(text) {
-    console.log(text);
-    let num = 20;
-}
+// function showFirstMessage(text) {
+//     console.log(text);
+//     let num = 20;
+// }
 
-showFirstMessage('Hello world!');
+// showFirstMessage('Hello world!');
 
-console.log(num); /// не корректно так как переменная let в function локальная!!!
+// console.log(num); /// не корректно так как переменная let в function локальная!!!
 
 
 // function cal(a, b) {
@@ -145,16 +145,117 @@ console.log(num); /// не корректно так как переменная
 //     return num;
 // }
 
-const anotherNum = ret();
-console.log(anotherNum);
+// const anotherNum = ret();
+// console.log(anotherNum);
 
 
-const logger = function() {
-    console.log('Hello');
-};
+// const logger = function() {
+//     console.log('Hello');
+// };
 
-logger();
+// logger();
 
 
-const calc = (a, b) =>
-    return a + b;
+// const calc = (a, b) => { return a + b; }
+
+// console.log(calc(4, 6));
+
+//
+
+
+
+
+
+
+
+// const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     genres: {},
+//     privat: false
+// };
+
+
+// for (let i = 0; i < 2; i++) {
+//     const a = prompt('Один из последних просмотренных фильмов?', ''),
+//         b = prompt('На сколько оцените его?', '');
+
+//     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+//         personalMovieDB.movies[a] = b;
+//         console.log('done')
+//     } else {
+//         console.log('error');
+//         i--;
+//     }
+
+
+// }
+
+
+
+// const numberOfAnswers = +prompt('Check your luck!', '');
+
+// const personalAnswersDB = {
+//     count: numberOfAnswers,
+//     correctAnswers: {},
+//     answers: {},
+//     privat: false
+// };
+
+
+
+// for (let i = 0; i < 1; i++) {
+//     const a = prompt('Check your luck!', '');
+
+//     if (a != null && a != '' && a != a.length < 50) {
+//         personalAnswersDB.answers = a;
+//         console.log('You are lucky!')
+//     } else {
+//         console.log('One more');
+//         i--;
+//     }
+// }
+
+// if (numberOfAnswers.count < 5, numberOfAnswers.count > 7) {
+//     personalAnswersDB.count = a;
+//     console.log('Corect');
+// } else {
+//     console.log('One more!@');
+// }
+
+// console.log(personalAnswersDB);
+
+
+
+
+
+const answersCheckDB = {
+    correctNumber: {},
+    answers: {},
+    privat: false
+}
+
+for (let i = 0; i < 2; i++) {
+    const a = +prompt('Check your lucky 1 > 10', '');
+    if (a == 6) {
+        answersCheckDB.correctNumber = a;
+        console.log('Correct');
+        i++;
+    } else {
+        alert('One more')
+        console.log('One more');
+        i--;
+    }
+
+    if (a !== 6) {
+
+        answersCheckDB.answers = a;
+
+    }
+
+
+}
+
+console.log(answersCheckDB);
