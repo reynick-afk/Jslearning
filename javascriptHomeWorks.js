@@ -1394,12 +1394,45 @@
 
 // Дан массив числами, например: [10, 20, 30, 50, 235, 3000]. Выведите на экран только те числа из массива, которые начинаются на цифру 1, 2 или 5.
 
+// Задача не решена !!!
+// let num = [10, 20, 30, 50, 235, 3000];
 
-let num = [10, 20, 30, 50, 235, 3000];
+// for (let i = 0; i < num.length; i++) {
+//     if (num[i] === '1' && num[i] === '2' && num[i] === '5') {
+//         console.log(num[i]);
+//         break;
+//     }
+// }
 
-for (let i = 0; i < num.length; i++) {
-    if (num[i] === '1' && num[i] === '2' && num[i] === '5') {
-        console.log(num[i]);
-        break;
-    }
-}
+
+
+// Дан массив с элементами 1, 2, 3, 4, 5, 6, 7, 8, 9. С помощью цикла for создайте строку '-1-2-3-4-5-6-7-8-9-'.
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// let str = arr.join('-');
+
+// console.log(str);
+
+// Найдите остаток от деления следующих переменных:
+
+// let a = 13;
+// let b = 5;
+
+// console.log(a % b);
+
+
+// console.log(2 * 2 ** 3);
+
+
+// Шаблонные строки в JavaScript
+
+
+// let str = `abc`;
+// alert(str); // выведет 'abc'
+
+// let someText = 'sosojambo';
+
+// let textFin = `Pososi moy ${someText}`;
+
+// console.log(textFin);
