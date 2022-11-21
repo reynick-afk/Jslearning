@@ -1436,3 +1436,107 @@
 // let textFin = `Pososi moy ${someText}`;
 
 // console.log(textFin);
+
+// let a = '123';
+// console.log(Number(a));
+
+// let a = +'123';
+
+// console.log(a);
+
+// parse Int, FLOAT
+
+// let a = '123';
+// let b = '321';
+
+// console.log(parseInt(a) + parseInt(b));
+
+// let c = '12.3px';
+// let g = '23.2px';
+
+// console.log(parseFloat(c) + parseFloat(g));
+
+
+// 123 => String => '123'
+
+// let a = 123;
+
+// console.log(String(a));
+
+// let a = 12;
+// let b = 31;
+
+// console.log(String(a) + String(b));
+
+// let a = 1234;
+
+// console.log(a.length); undefined
+
+// let a = 1234;
+// let b = 2311;
+
+// let strA = String(a).length;
+// let strB = String(b).length;
+
+// console.log(strA + strB);
+
+// Преобразование логического типа в JavaScript
+
+// alert(String(true));  // выведет 'true'
+// alert(String(false)); // выведет 'false'
+
+// console.log(Number(true)); // 1
+// console.log(Number(false)); // 0
+
+// console.log(true + 1); // 2
+
+// Преобразование к логическому типу в JavaScript
+
+// console.log(Boolean(0));          // false
+// console.log(Boolean(-0));         // false
+// console.log(Boolean(+0));         // false
+// console.log(Boolean(null));       // false
+// console.log(Boolean(false));      // false
+// console.log(Boolean(NaN));        // false
+// console.log(Boolean(undefined));  // false
+// console.log(Boolean(''));         // false
+
+// console.log(Boolean(-1));          // true
+// console.log(Boolean(Infinity));    // true
+// console.log(Boolean(-Infinity));   // true
+
+// console.log(Boolean('0'));         // true
+// console.log(Boolean('false'));     // true
+// console.log(Boolean('NaN'));       // true
+// console.log(Boolean('null'));      // true
+// console.log(Boolean('undefined')); // true
+
+
+// let test = Boolean(1 / 0);
+// console.log(test);
+
+// Последний символ строки в JavaScript
+
+// let str = 'asdfgh';
+// let last = str.length - 1;
+
+// console.log(str[last]);
+
+
+// let str = 'qweqwedsd';
+
+// let sLast = str.length - 3;
+
+// console.log(str[sLast]);
+
+
+// Строки с цифрами в JavaScript
+
+
+// let test = '12345';
+
+// console.log(test[0] + test[1]);
+
+// let test = '12345';
+
+// console.log(Number);
