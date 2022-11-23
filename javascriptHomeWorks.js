@@ -1540,3 +1540,95 @@
 // let test = '12345';
 
 // console.log(Number);
+
+// let num = '1234';
+
+// console.log(Number(num[0]) + Number(num[1]) + Number(num[2]) + Number(num[3]));
+// console.log(num[0] * num[1] * num[2] * num[3]);
+// console.log(num[3]+num[2]+num[1]+num[0]);
+
+
+// Сокращенные операции в JavaScript
+
+// let num = 1;
+// num = num + 2;
+
+// console.log(num); // 3
+
+// Сокращенные операции
+
+// let num = 1;
+// num += 2; // -=, *=, /=
+
+// console.log(num);
+
+// Переделайте этот код так, чтобы в нем использовались описанные сокращенные операции:
+
+// let num = 47;
+// num += 7;
+// num -= 18;
+// num *= 10;
+// num /= 15;
+// console.log(num);
+
+
+// Операции инкремента и декремента в JavaScript
+
+// let num = 0;
+// num = num + 1; // прибавляем к переменной num число 1
+// alert(num);    // выведет 1
+
+// let num = 0;
+// num++;
+// num--;
+
+// console.log(num);
+// Переделайте этот код так, чтобы в нем операции инкремента и декремента:
+
+// let num = 10;
+// num = num + 1;
+// num = num + 1;
+// num = num - 1;
+// alert(num);
+
+// let num = 10;
+// num++;
+// num++;
+// num--;
+// console.log(num);
+
+// Неточные вычисления в JavaScript
+
+// let a = 0.1 + 0.2;
+// console.log(a);
+
+// let a = 0.1 + 0.2;
+// console.log(a.toFixed(1)); // Метод toFixed выдает в виде строки => +a.toFixed(1)
+
+// // Функция prompt в JavaScript
+// let name = prompt('Ваше имя?');
+
+// alert('Ваше имя: ' + name);
+
+// let num1 = prompt('Введите первое число');
+// let num2 = prompt('Введите второе число');
+
+// // alert(num1 + num2); // сложит числа как строки
+
+// alert(Number(num1) + Number(num2));
+
+
+// С помощью функции prompt спросите у пользователя сторону квадрата. Выведите на экран площадь введенного квадрата.
+
+// let num = prompt('Введите сторону квадрата:');
+
+// alert(Number(num) * Number(num));
+
+// // С помощью двух функций prompt спросите у пользователя стороны прямоугольника. Выведите на экран периметр введенного прямоугольника.
+
+// let firstP = prompt('Введите первую сторону:');
+// let secondP = prompt('Введите вторую сторону:');
+
+// alert(2 * (Number(firstP) + Number(secondP)));
+
+document.write('<b>First section</b>');
