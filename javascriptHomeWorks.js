@@ -1631,4 +1631,193 @@
 
 // alert(2 * (Number(firstP) + Number(secondP)));
 
-document.write('<b>First section</b>');
+
+
+// let num1 = 1;
+// let num2 = 2;
+// console.log('сумма: ' + Number(num1 + num2));
+
+// let a = 1;
+// let b = 2;
+// let c = 0;
+// console.log(a + b + c);
+
+// let num = '123';
+// let sum = Number(num[0]) + Number(num[1]) + Number(num[2]);
+// console.log(sum);
+
+// let num = 123;
+// let sum = String(num);
+
+// console.log(sum[0]);
+
+// let a = 0;
+// console.log(++a);
+
+// let num = 123;
+
+// console.log(String(num).length);
+
+// let a = 24 * 60 * 60;
+// console.log(a);
+
+// let num = 123;
+// let str = String(num);
+// console.log(str.length);
+
+// let num = 123;
+// let str = String(num);
+// console.log(str[2]);
+
+
+
+// let num = 123;
+// let str = String(num);
+// console.log(str.length);
+
+
+// let num = 123;
+// let str = String(num);
+// console.log(str[2]);
+
+
+// let a = '123';
+// let b = '456';
+// let s = Number(a) + Number(b);
+
+// console.log(s);
+
+// let aaa = 1;
+// let bbb = 2;
+// let ccc = 3;
+
+// console.log(aaa + bbb + ccc);
+
+
+// const second = 60;
+// const minute = 60;
+// const hour = 24;
+// const day = hour;
+
+// // 1
+// console.log(second * minute * hour);
+
+// // 2
+// // Найдите количество секунд в 30 сутках.
+
+// let days = 30;
+// console.log(second * minute * hour * day)
+
+// // 3
+// // Найдите количество секунд в году.
+
+// let yearsDays = 365;
+
+// console.log(second * minute * hour * yearsDays);
+
+// // 4
+// // Найдите количество минут в сутках.
+
+// console.log(day * minute);
+
+// // 5
+// // Найдите количество минут в году
+
+// console.log(yearsDays * hour * minute);
+
+
+
+// const byte = 8;
+// const kByte = 1024;
+// const mByte = 1024;
+// const gByte = 1024;
+// const tByte = 1024;
+
+// //1 
+// // Найдите количество байт в мегабайте.
+
+// console.log(mByte * kByte * byte);
+
+// // 2
+// // Найдите количество байт в гигабайте.
+
+// console.log(gByte * mByte * kByte * byte);
+
+// // 3
+// // Найдите количество байт в 10 гигабайтах.
+
+// console.log((10 * gByte) * mByte * kByte * byte);
+
+// // 4
+// // Найдите количество байт в терабайте.
+
+// console.log(tByte * gByte * mByte * kByte * byte);
+
+// // 5
+// // Найдите количество килобайт в терабайте.
+
+// console.log(tByte * gByte * mByte * kByte);
+
+
+
+//1 
+// Пусть дана переменная r с радиусом круга. По соответствующей формуле
+//  найдите площадь круга и запишите ее в переменную s. Выведите содержимое этой переменной на экран.
+
+
+// const p = 3.14;
+// let r = 10;
+
+// let s = p * (r * r);
+
+// console.log(s);
+// alert(s);
+
+//2
+// Пусть дана переменная a со стороной квадрата. 
+// Найдите площадь квадрата и запишите ее в переменную s. Выведите содержимое этой переменной на экран.
+
+// let a = 10;
+
+// let s = a * a;
+
+// console.log(s);
+// alert(s);
+
+//3 
+// // Пусть даны переменные a и b со сторонами прямоугольника. 
+// Найдите площадь прямоугольника и запишите ее в переменную s. Выведите содержимое этой переменной на экран.
+
+// let a = 12;
+// let b = 13;
+// let s = a * b;
+
+// console.log(s);
+
+// // 4 
+// Пусть даны переменные a и b со сторонами прямоугольника.
+// Найдите периметр прямоугольника и запишите его в переменную p. Выведите содержимое этой переменной на экран.
+
+// let a = 13;
+// let b = 32;
+// let p = 2 * (a + b);
+
+// console.log(p);
+
+//5 
+// Пусть дана переменная tc с температурой в градусах Цельсия. 
+// По соответствующей формуле выполните перевод этой температуры в градусы Фаренгейта.
+
+// let tc = 50;
+// let tf = (tc * 1.8) + 32;
+
+// console.log(tf);
+
+// //6
+// Пусть дана переменная tf с температурой в градусах Фаренгейта. 
+// По соответствующей формуле выполните перевод этой температуры в градусы Цельсия.
+
+// let tf = 122;
+// let cf = (5 / 9) * (tf - 32)
+
+// console.log(cf);
