@@ -1821,3 +1821,206 @@
 // let cf = (5 / 9) * (tf - 32)
 
 // console.log(cf);
+
+/// Массивы
+
+// let arr = ['a', 'b', 'c'];
+
+// let arr = [1,2,3];
+
+// let arr = [1, 2, 'a', 'b', null, true, false]
+
+// Создайте массив с числами. Выведите его на экран с помощью функции alert, 
+// а также выведите его в консоль с помощью console.log.
+
+// let arr = [1, 2, 3, 4, 5];
+// // alert(arr);
+// console.log(arr);
+
+
+// Создайте массив со строками.Выведите его на экран с помощью функции alert,
+// а также выведите его в консоль с помощью console.log.
+
+// let arr = ['hello', 'world', 'JS'];
+// // alert(arr);
+// console.log(arr);
+
+
+// let arr = ['a', 'b', 'c'];
+
+// console.log(arr[0]);
+// console.log(arr[1]);
+// console.log(arr[2]);
+
+// let arr = [1, 2, 3];
+
+// console.log(arr[0]);
+// console.log(arr[1]);
+// console.log(arr[2]);
+
+// let arr = [1, 2, 3];
+
+// console.log(arr[0] + arr[1] + arr[2]);
+
+// let arr = ['a', 'b', 'c', 'd']; // => 'a+b+c+d'
+
+// console.log(arr[0] + '+' + arr[1] + '+' + arr[2] + '+' + arr[3]);
+
+// let arr = ['a', 'b', 'c'];
+// console.log(arr.length);
+
+// let arr = [1, 2, 3];
+// console.log(arr[arr.length - 1])
+
+// Создайте массив с произвольными элементами. Выведите на экран количество элементов в этом массиве.
+
+// let arr = [1, 3, 45, 6, 'ad', '1'];
+// console.log(arr.length);
+
+
+// Создайте массив с произвольными элементами. Выведите на экран последний элемент этого массива.
+
+// let arr = [1, 3, 45, 6, 'ad', '1'];
+// console.log(arr[arr.length - 1]);
+
+// Изменение элементов массива в JavaScript
+
+// let arr = ['a', 'b', 'c'];
+
+// arr[0] = '!';
+// console.log(arr); // выведет ['!', 'b', 'c']
+
+// Создайте массив с элементами 'a', 'b', 'c'. Запишите вместо первого элемента число 1, вместо второго - 2, вместо третьего - 3.
+
+// let arr = ['a', 'b', 'c'];
+
+// arr[0] = 1;
+// arr[1] = 2;
+// arr[2] = 3;
+
+// console.log(arr);
+
+// Перезапись элементов
+
+// let arr = ['a', 'b', 'c'];
+
+// arr[0] = arr[0] + '!';
+// arr[1] = arr[1] + '!';
+// arr[2] = arr[2] + '!';
+
+// console.log(arr); // выведет ['a!', 'b!', 'c!']
+
+//  +=
+
+// let arr = ['a', 'b', 'c'];
+
+// arr[0] += '!';
+// arr[1] += '!';
+// arr[2] += '!';
+
+// console.log(arr); // выведет ['a!', 'b!', 'c!']
+
+// Создайте массив с числами. Прибавьте к каждому элементу массива число 3. Выведите на экран измененный массив.
+
+// let arr = [1, 2, 3, 4, 5];
+
+// arr[0] += 3;
+// arr[1] += 3;
+// arr[2] += 3;
+// arr[3] += 3;
+// arr[4] += 3;
+
+// console.log(arr);
+
+// Инкремент и декремент ++ --
+
+// let arr = [1, 2, 3, 4];
+
+// arr[0]++;
+// ++arr[1];
+// arr[2]--;
+// --arr[3];
+
+// console.log(arr); // выведет [2, 3, 2, 3]
+
+// Создайте массив с элементами 1, 2 и 3. С помощью оператора ++ увеличьте каждый элемент массива на единицу.
+
+// let arr = [1, 2, 3];
+
+// arr[0]++;
+// arr[1]++;
+// arr[2]++;
+
+// console.log(arr);
+
+// Добавление элементов по ключам JavaScript
+
+// let arr = [];
+
+// arr[0] = 'a';
+// arr[1] = 'b';
+// arr[2] = 'c';
+
+// console.log(arr); // выведет ['a', 'b', 'c']
+
+// let arr = ['a', 'b', 'c'];
+
+// arr[3] = 'd';
+// console.log(arr); // выведет ['a', 'b', 'c', 'd']
+
+// С помощью описанного приема создайте массив с элементами 1, 2 и 3.
+
+// let arr = [];
+
+// arr[0] = 1;
+// arr[1] = 2;
+// arr[2] = 3;
+// console.log(arr);
+
+// let arr = [1, 2, 3];
+
+// arr[3] = 4;
+// arr[4] = 5;
+
+// console.log(arr);
+
+// Разреженные массивы в JavaScript
+
+// let arr = ['a', 'b', 'c'];
+
+// arr[4] = '!';
+
+// console.log(arr);
+
+// console.log(arr.length); // 5
+
+// let arr = [];
+
+// arr[3] = 'a';
+// arr[8] = 'b';
+
+// console.log(arr.length);
+
+// Добавление элементов через push в JavaScript
+
+// let arr = [];
+
+// arr.push('a');
+// arr.push('b');
+// arr.push('c');
+
+// console.log(arr);
+
+// let arr = [];
+
+// arr.push('1');
+// arr.push('2');
+// arr.push('3');
+
+// console.log(arr);
+
+// let arr = [1, 2, 3];
+// arr.push(4);
+// arr.push(5);
+
+// console.log(arr);
