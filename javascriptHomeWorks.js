@@ -2024,3 +2024,235 @@
 // arr.push(5);
 
 // console.log(arr);
+
+
+// let arr = ['a', 'b', 'c'];
+// let key = 0;
+
+// console.log(arr[key]);
+// console.log(arr[0]);
+
+// let arr = ['a', 'b', 'c'];
+
+// let key = 2;
+
+// console.log(arr[key]);
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let key1 = 1;
+// let key2 = 2;
+
+// console.log(arr[key1] + arr[key2]);
+
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+
+// delete arr[1];
+// delete arr[3];
+
+// console.log(arr.length);
+
+// let arr = [1, 2, 3, 4, 5, 6];
+// console.log(arr[arr.length - 1]);
+
+// let arr = [1, 2, 3, 4, 5];
+// console.log(arr[0] + arr[1] + arr[2] + arr[3] + arr[4]);
+
+// let arr = [1, 2, 3, 4, 5];
+// console.log(arr.length);
+
+// let arr = [1, 2, 3, 4, 5];
+// console.log(arr.length);
+
+// Объекты в JavaScript
+
+// let obj = {
+//     1: 'Понедельник',
+//     2: 'Вторник',
+//     3: 'Среда',
+//     4: 'Четверг',
+//     5: 'Пятница',
+//     6: 'Суббота',
+//     7: 'Пятница',
+// };
+
+// console.log(obj);
+
+// let obj = {
+//     user: 'John123',
+//     name: 'John',
+//     surname: 'Pitz',
+//     old: '21',
+//     profession: 'front-end developer'
+// };
+
+// console.log(obj['user'] + ' ' + obj['name'] + ' ' + obj['surname']);
+
+// let date = {
+//     years: '2022',
+//     month: 'november',
+//     day: '28'
+// };
+
+// console.log(date.years + '-' + date.month + '-' + date.day);
+
+// let obj = {
+//     '1a': 1,
+//     'b2': 2,
+//     'c-c': 3,
+//     'd 4': 4,
+//     'e5': 5
+// };
+
+// console.log(obj['1a']);
+// console.log(obj.b2);
+// console.log(obj['c-c']);
+// console.log(obj['d 4']);
+// console.log(obj.e5);
+
+// let obj = { x: 1, y: 2, z: 3 };
+
+// obj.x *= obj.x;
+// obj.y *= obj.y;
+// obj.z *= obj.z;
+
+// console.log(obj);
+
+
+// let obj = {};
+
+// obj.a = 1;
+// obj.b = 2;
+// obj.c = 3;
+
+// console.log(obj);
+
+// let obj = { 7: 'a', 50: 'b', 23: 'c' };
+
+// console.log(obj);
+
+// let obj = { a: 1, b: 2, c: 3 };
+// let keys = Object.keys(obj);
+// console.log(keys);
+
+// Получите массив ключей следующего объекта:
+
+// let obj = { x: 1, y: 2, z: 3 };
+
+// let keys = Object.keys(obj);
+// console.log(keys);
+
+
+// let obj = { x: 1, y: 2, z: 3 };
+
+// console.log(Object.keys(obj).length);
+
+// let obj = { x: 1, y: 2, z: 3 };
+// let key = 'x';
+
+// console.log(obj[key]);
+
+
+// let obj = { x: 1, y: 2, z: 3 };
+// console.log(obj['x']);
+
+// let obj = { x: 1, y: 2, z: 3 };
+// let key = 'x';
+// console.log(obj[key]);
+
+
+// // let obj = { x: 1, y: 2, z: 3 };
+
+// let prop = 'x';
+// console.log(obj[prop]);
+
+// let obj = { x: 1, y: 2, z: 3 };
+
+// let prop = 'x';
+// console.log(obj[prop]);
+
+
+// Вычисляемые свойства в JavaScript
+
+// let obj = {
+//     a: 1,
+//     b: 2,
+//     c: 3
+// };
+
+// let key = 'a';
+
+// // let obj = {
+// //     [key]: 1,
+// //     b: 2,
+// //     c: 3
+// // };
+
+
+// let obj = {
+//     [key + '1']: 1,
+//     [key + '2']: 2,
+//     [key + '3']: 3
+// };
+// console.log(obj);
+
+
+// let key = 'x';
+
+// let obj = {
+//     [key]: 1,
+//     y: 2,
+//     z: 3
+// };
+
+// console.log(obj);
+
+// let key1 = 'x';
+// let key2 = 'y';
+// let key3 = 'z';
+
+// let obj = {
+//     [key1]: 1,
+//     [key2]: 2,
+//     [key3]: 3
+// };
+
+// console.log(obj);
+
+// Оператор in в JavaScript
+
+// let obj = { a: 1, b: 2, c: 3 };
+// console.log('b' in obj); // выведет true
+// console.log('x' in obj); // выведет false
+
+
+// Оператор delete 
+
+// let obj = {
+//     a: 1,
+//     b: 2,
+//     c: 3
+// };
+
+// delete obj.b;
+
+// console.log(obj);
+// console.log(Object.keys(obj).length);
+
+
+// let obj = { x: 1, y: 2, z: 3 };
+// delete obj.x;
+
+// console.log('x' in obj);
+
+// Типизация объектов в JavaScript
+
+// console.log( typeof {x: 1, y: 2, z: 3} );
+// console.log( typeof {} );
+
+// let obj = {x: 1, y: 2, z: 3};
+// console.log( typeof obj );
+
+// let obj = {x: 1, y: 2, z: 3};
+// console.log( typeof obj['x'] );
