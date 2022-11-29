@@ -2256,3 +2256,283 @@
 
 // let obj = {x: 1, y: 2, z: 3};
 // console.log( typeof obj['x'] );
+
+// let arr = ['1', '2', '3'];
+// console.log( typeof arr[0] );
+// let arr = [1, 2, 3];
+// console.log( typeof arr[0] );
+
+// let arr = [1, 2, 3];
+// console.log( typeof arr );
+
+// console.log(typeof {}); // object
+
+// console.log(typeof { x: 1, y: 2, z: 3 }); // object
+
+// let obj = {x: 1, y: 2, z: 3};
+// console.log( typeof obj['x'] ); // number
+
+// console.log(typeof []); // object
+
+
+// Отличаем массивы от объектов в JavaScript
+
+// console.log(Array.isArray([])); // выведет true
+// console.log(Array.isArray({})); // выведет false
+
+///
+// В JavaScript семь примитивных типов данных: string, number, boolean, null, undefined, symbol, bigint. 
+// Запомните их количество и названия - это часто спрашивают на собеседованиях.
+///
+
+// const arr = ['a', 'b', 'c'];
+// arr[1] = '!';
+// console.log(arr);
+
+// const arr = ['a', 'b', 'c'];
+// arr = ['a', 'b', 'c'];
+// console.log(arr); //eror
+
+// let arr = [1, 2, 3, 4, 5];
+// let res = arr[1] + arr[2];
+
+
+
+// const arr = [1, 2, 3, 4, 5];
+// const res = arr[1] + arr[2];
+
+// console.log(res);
+
+// let obj = { x: 1, y: 2, z: 3 };
+// console.log(obj['x']);
+
+// let obj = { x: 1, y: 2, z: 3 };
+// let key = 'x';
+
+// console.log(obj[key]);
+
+// let obj = { x: 1, y: 2, z: 3 };
+// let sum = obj['x'] + obj['y'] + obj['z'];
+
+// console.log(sum);
+
+// let obj = { x: 1, y: 2, z: 3 };
+// console.log(Object.keys(obj).length);
+
+
+//
+// IF ELSE
+//
+
+// if (операция сравнения) {
+// 	/*
+// 		расположенный здесь код выполниться,
+// 		если результат операция сравнения верный
+// 	*/
+// } else {
+// 	/*
+// 		расположенный здесь код выполниться,
+// 		если результат операция сравнения неверный
+// 	*/
+// }
+
+// Операторы больше и меньше в JavaScript
+
+// let test = 1;
+
+// if (test > 0) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+
+// let test1 = 0;
+
+// if (test1 >= 0) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// Проверьте, что переменная test больше 10.
+
+// let test = 123;
+
+// if (test > 10) {
+//     console.log('test > 10');
+// } else {
+//     console.log('test < 10');
+// }
+
+// Проверьте, что переменная test меньше 10.
+
+// let test = 1;
+
+// if (test < 10) {
+//     console.log('test < 10');
+// } else {
+//     console.log('test > 10');
+// }
+
+// Проверьте, что переменная test больше или равна 10.
+
+// let test = 10;
+
+// if (test >= 10) {
+//     console.log('test > 10');
+// } else {
+//     console.log('test < 10');
+// }
+
+// Проверьте, что переменная test меньше или равна 10.
+
+// let test = 11;
+
+// if (test <= 10) {
+//     console.log('test <= 10');
+// } else {
+//     console.log('test > 10');
+// }
+
+// == 
+
+// let test = 0;
+
+// if (test == 0) {
+//     console.log('++');
+// } else {
+//     console.log('--');
+// };
+
+// Проверьте, что переменная test равна 10.
+
+// let test1 = 0;
+
+// if (test1 == 10) {
+//     console.log('++');
+// } else {
+//     console.log('--');
+// };
+
+// !=
+
+// let test = 1;
+
+// if (test != 0) {
+//     console.log('++');
+// } else {
+//     console.log('--');
+// }
+
+// let test = 0;
+
+// if (test != 0) {
+//     console.log('++');
+// } else {
+//     console.log('--');
+// }
+
+// Проверьте, что переменная test не равна 10.
+
+// let test = 0;
+
+// if (test != 10) {
+//     console.log('++');
+// } else {
+//     console.log('--');
+// }
+
+
+// Даны переменные test1 и test2. Проверьте, что значение какой из этих переменных больше и выведите соответствующее сообщение.
+
+// let test1 = 4;
+// let test2 = 2;
+
+// if (test1 > test2) {
+//     console.log('test1>');
+// } else {
+//     console.log('test2>');
+// }
+
+// Даны переменные test1 и test2. Проверьте, равны ли их значения и выведите соответствующее сообщение.
+
+// let test1 = 2;
+// let test2 = 2;
+
+// if (test1 == test2) {
+//     console.log('==');
+// } else {
+//     console.log('!=');
+// }
+
+
+// let test = 'abc';
+
+// if (test == 'abc') {
+//     console.log('+++'); // сработает это
+// } else {
+//     console.log('---');
+// }
+
+// Даны переменные test1 и test2, содержащие строки. Проверьте, равны ли их значения и выведите соответствующее сообщение.
+
+// let test1 = 'abc';
+// let test2 = 'abc';
+
+// if (test1 == test2) {
+//     console.log('==');
+// } else {
+//     console.log('!==');
+// }
+
+// let test1 = '123';
+// let test2 = 123;
+
+// if (test1 == test2) {
+//     console.log('==');
+// } else {
+//     console.log('!==');
+// }
+
+/// === 
+
+// let a = 1;
+// let b = '1';
+
+// if (a === b) {
+//     console.log('==');
+// } else {
+//     console.log('!==');
+// }
+
+// Проверьте, что переменная num больше нуля и меньше 5.
+
+// let num = 4;
+
+// if (num > 0 && num < 5) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// Проверьте, что переменная num больше или равна 10 и меньше или равна 20.
+
+// let num = 40;
+
+// if (num >= 10 && num <= 20) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// Проверьте, что переменная num1 равна или меньше 1, а переменная num2 больше или равна 3.
+
+// let num1 = 1;
+// let num2 = 3;
+
+// if (num1 <= 1 && num2 >= 3) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
