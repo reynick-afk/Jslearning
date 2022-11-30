@@ -2956,17 +2956,132 @@
 // Если полученная сумма меньше или равна 9, то выведите сообщение о том, 
 // что сумма цифр однозначна, в противном случае выведите сообщение о том, что сумма цифр двухзначна.
 
-// let num = 12;
+// let num = 11;
+// let sum = String(num);
+// let sumFirst = Number(sum[0]);
+// let sumSecond = Number(sum[1]);
 
 // if (num >= 10 && num <= 99) {
-//     console.log(String(num[0] + num[1]));
-
-//     if (num <= 9) {
-//         console.log('Число однозначно');
-//     } else {
-//         console.log('Сумма цифр двухзначна');
-//     }
-// } else {
-//     console.log('Eror');
+//     console.log(sumFirst + sumSecond);
 // }
-// console.log(num[0] + num[1]);
+// if (num <= 9) {
+//     console.log('Число однозначно');
+// } else {
+//     console.log('Сумма цифр двухзначна');
+// }
+
+// Конструкция switch-case в JavaScript
+
+
+// switch (переменная) {
+// 	case 'значение1':
+// 		/*
+// 			здесь код, который выполнится в случае,
+// 			если переменная имеет значение1
+// 		*/
+// 	break;
+// 	case 'значение2':
+// 		/*
+// 			здесь код, который выполнится в случае,
+// 			если переменная имеет значение2
+// 		*/
+// 	break;
+// 	case 'значение3':
+// 		/*
+// 			здесь код, который выполнится в случае,
+// 			если переменная имеет значение3
+// 		*/
+// 	break;
+// 	default:
+// 		/*
+// 			здесь код, который выполнится в случае,
+// 			если не совпала ни с одним значением
+// 		*/
+// 	break;
+// }
+
+// let num = 1;
+
+// switch (num) {
+//     case 1:
+//         console.log('value1');
+//         break;
+//     case 2:
+//         console.log('value2');
+//         break;
+//     case 3:
+//         console.log('value3');
+//         break;
+//     default:
+//         console.log('incorrect value');
+//         break;
+// }
+
+// Переписать код
+
+// let lang = 'ru';
+
+// if (lang == 'ru') {
+//     console.log('рус');
+// } else if (lang == 'en') {
+//     console.log('анг');
+// } else if (lang == 'de') {
+//     console.log('нем');
+// } else {
+//     console.log('язык не поддерживается');
+// }
+
+// let lang = 'ru';
+
+// switch (lang) {
+//     case 'ru':
+//         console.log('рус');
+//         break;
+//     case 'eng':
+//         console.log('анг');
+//         break;
+//     case 'de':
+//         console.log('нем');
+//         break;
+//     default:
+//         console.log('incorrect value');
+//         break;
+// }
+
+// Необязательность break в конструкции switch-case в JavaScript
+
+// let num = 1; // пусть здесь число 1
+
+// switch (num) {
+//     case 1:
+//         console.log(1); // сработает это
+//     case 2:
+//         console.log(2); // сработает и это
+//     case 3:
+//         console.log(3); // сработает и это
+// }
+
+// Тернарный оператор в JavaScript
+
+// let переменная = условие ? значение1 : значение2;
+
+// let age = 21;
+// let adult = age >= 18 ? true : false;
+// console.log(adult);
+
+// let num = 1;
+// let res;
+
+// if (num >= 0) {
+//     res = '1';
+// } else {
+//     res = '2';
+// }
+
+// console.log(res);
+
+// let num = -1;
+// let res = num >= 0 ? '1' : '2';
+
+
+// console.log(res);
