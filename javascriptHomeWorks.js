@@ -2536,3 +2536,437 @@
 // } else {
 //     console.log('---');
 // }
+
+// Логическое ИЛИ в JavaScript ||
+
+// let num1 = 10;
+// let num2 = -5;
+
+// if (num1 > 0 || num2 > 0) {
+// 	console.log('+++'); // сработает это
+// } else {
+// 	console.log('---');
+// }
+
+// let num1 = -10;
+// let num2 = -10;
+
+// if (num1 >= 0 || num2 >= 0) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let num1 = 0;
+// let num2 = 5;
+
+// if (num1 >= 0 || num2 >= 0) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let num = 2;
+// if (num == 0 || num > 1 && num < 5) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// let num = 3;
+
+// if (num > 5 || (num > 0 && num < 3)) {
+//     console.log('+++');
+// } else {
+// console.log('---');
+// }
+
+// let num = 19;
+
+// if (num == 9 || (num > 10 && num < 20) || (num > 20 && num < 30)) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// Инвертирование логических выражений в JavaScript
+
+// if (num > 0 && num < 5) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// // =>
+
+// if (num <= 0 || num >= 5) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// //
+
+// if (!(num > 0 && num < 5)) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// let num1 = 0;
+// let num2 = 11;
+
+// if (!(num1 > 0 || num2 < 10)) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// boolean true/false
+// let test = true;
+
+// if (test === true) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+//
+
+// let test = false;
+
+// if (test === false) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+//Сравнение значений с булевым типом в JavaScript
+// В прошлом примере мы сравнивали свойство test ===, если в переменной test будет всегда true, false - можно использовать == 
+
+// let test = true; // тут пишем или true, или false
+
+// if (test == true) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// let test = 1;
+
+// if (test == true) {
+//     console.log('+++'); // сработает это
+// } else {
+//     console.log('---');
+// }
+
+// let test = 0;
+
+// if (test == true) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---'); // сработает это
+// }
+
+
+// Фактически такое сравнение можно явно переписать в следующем виде:
+
+// let test = 1;
+
+// if (Boolean(test) == true) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// Вспомните и напишите, какие значения при приведении к логическому типу дают false.
+
+// Boolean(false); // false
+// Boolean(undefined); // false
+// Boolean(null); // false
+// Boolean(''); // false
+// Boolean(NaN); // false
+// Boolean(0); // false
+// Boolean(-0); // false
+// Boolean(0 n); // false
+
+// Boolean(true); // true
+// Boolean('hi'); // true
+// Boolean(1); // true
+// Boolean([]); // true
+// Boolean([0]); // true
+// Boolean([1]); // true
+// Boolean({}); // true
+// Boolean({ a: 1 }); // true
+
+// let test = 3 * 'a';
+
+// if (test == true) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+
+// Сокращенная форма проверки на истину в JavaScript
+
+// let test = true;
+
+// if (test == true) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// Сокращаем test == true => if(test)
+
+// let test = true;
+
+// if (test) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// let test = true;
+
+// if (test) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// let test = true;
+
+// if (test === false) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// let test = true;
+
+// if (test !== true) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let test = true;
+
+// if (!test) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let test = true;
+
+// if (!test) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// let test = true;
+
+// if (!test) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// let test = true;
+
+// if (!test) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// let test = false;
+
+// if (test) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let test;
+
+// if (test) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let test = '0';
+
+// if (test) {
+// 	console.log('+++'); +
+// } else {
+// 	console.log('---');
+// }
+
+// let test1 = true;
+// let test2 = true;
+
+// if (test1 && test2) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let test1 = true;
+// let test2 = true;
+
+// if (test1 === true && test2 === true) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// let test1 = true;
+// let test2 = true;
+
+// if (test1 && test2) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// let test1 = true;
+// let test2 = true;
+
+// if (test1 && (!test2)) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+
+// let test1 = true;
+// let test2 = true;
+
+// if (!(test1 && test2)) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// let test1 = true;
+// let test2 = true;
+
+// if ((!test1) && test2) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+
+// let test1 = true;
+// let test2 = true;
+// let test3 = true;
+
+// if (test1 && test2 && test3) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// let test1 = true;
+// let test2 = true;
+// let test3 = true;
+
+// if (test1 || (test2 && test3)) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// let test1 = true;
+// let test2 = true;
+// let test3 = true;
+
+// if (test1 || (test2 && test3)) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// let test1 = 10;
+
+// if (test1 == 10) {
+//     console.log('Yes');
+// }
+
+// let test = 10;
+// if (test > 0)
+//     console.log('+++');
+// else
+//     console.log('---');
+
+// let test = 10;
+// if (test > 0)
+//     console.log('+++');
+
+// let num = 1;
+
+// if (num == 1) {
+//     console.log('value1');
+// } else if (num == 2) {
+//     console.log('value2');
+// } else if (num == 3) {
+//     console.log('value3');
+// }
+
+// let num = 4;
+
+// if (num == 1) {
+//     console.log('1');
+// } else if (num == 2) {
+//     console.log('2');
+// } else if (num == 3) {
+//     console.log('3');
+// } else {
+//     console.log('Error number');
+// }
+
+// В переменной day лежит какое - то число из интервала от 1 до 31.
+// Определите в какую декаду месяца попадает это число(в первую, вторую или третью).
+
+// let day = 2;
+
+// if (day >= 1 && day < 10) {
+//     console.log('First');
+// } else if (day >= 11 && day < 20) {
+//     console.log('Second');
+// } else if (day >= 21 && day < 31) {
+//     console.log('Three');
+// } else {
+//     console.log('Not true number');
+// }
+
+// Модифицируйте предыдущую задачу так, чтобы, если в переменной day 
+// будет не число от 1 до 31, выдавалось сообщение об ошибке.
+
+// Вложенные конструкции if-else в JavaScript
+
+// Пусть в переменной num хранится число. Если это число попадает в диапазон от 10 до 99, то найдите сумму цифр этого числа. 
+// Если полученная сумма меньше или равна 9, то выведите сообщение о том, 
+// что сумма цифр однозначна, в противном случае выведите сообщение о том, что сумма цифр двухзначна.
+
+// let num = 12;
+
+// if (num >= 10 && num <= 99) {
+//     console.log(String(num[0] + num[1]));
+
+//     if (num <= 9) {
+//         console.log('Число однозначно');
+//     } else {
+//         console.log('Сумма цифр двухзначна');
+//     }
+// } else {
+//     console.log('Eror');
+// }
+// console.log(num[0] + num[1]);
