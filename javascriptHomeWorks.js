@@ -3188,3 +3188,127 @@
 // } else {
 //     console.log('Массив не начинается с "a" или с "b"');
 // }
+
+// Дано целое число. Напишите условие, которое проверит, равна ли последняя цифра этого числа нулю.
+
+// let num = 20;
+
+// if (String(num)[1] == 0) {
+//     console.log('ravno 0');
+// } else {
+//     console.log('ne ravno');
+// }
+
+// Пусть в переменной num хранится число. 
+// Определите, четное число или нет. Число будет четным, если последний символ равен 0, 2, 4, 6 или 8, 
+// и нечетным в противном случае.
+
+// let num = 22;
+// let numEven = String(num);
+// let numEvenSec = numEven[numEven.length - 1];
+
+
+// if (numEvenSec == 2 || numEvenSec == 4 || numEvenSec == 6 || numEvenSec == 8) {
+//     console.log(num);
+// } else {
+//     console.log('Не четное число');
+// }
+
+// Как известно, четные числа делятся на 2 без остатка, а нечетные - с остатком. 
+// Пусть у вас дано число. С помощью оператора % и конструкции if проверьте четное это число или нет.
+
+// let a = 5;
+// let b = 2;
+// let resul = a % b;
+
+// if (resul === 0) {
+//     console.log('Четное');
+// } else {
+//     console.log('Не четное : ' + resul);
+// }
+
+// Дано число. Проверьте, что оно делится на 3.
+
+// let a = 23;
+// let b = 3;
+// let resul = a % b;
+
+// if (resul === 0) {
+//     console.log('delitsa');
+// } else {
+//     console.log('Ne delitsa  : остаток ' + resul);
+// }
+
+// Практика
+
+// let num1 = 1;
+// let num2 = 2;
+// let num3 = num1 + num2;
+
+// if (num3 == 3) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+
+// let num1 = '1';
+// let num2 = '2';
+// let num3 = Number(num1) + Number(num2);
+
+// if (num3 == 3) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// let num1 = '1';
+// let num2 = '2';
+
+// if (Number(num1) + Number(num2) === 3) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// let num = 123;
+// let num2 = String(num);
+
+// if (num2[0] == 1) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+
+// let num = 12;
+
+// if (String(num.length == 2)) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+// let num = 12;
+
+// if (String(num).length == 2) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+
+// let num = '123033'; // берем в кавычки, чтобы обращаться к цифрам
+
+
+// let sum1 = Number(num[0]) + Number(num[1]) + Number(num[2]);
+// let sum2 = Number(num[3]) + Number(num[4]) + Number(num[5]);
+
+
+
+
+// if (sum1 === sum2) {
+//     console.log('суммы равны');
+// } else {
+//     console.log('суммы не равны');
+// }
