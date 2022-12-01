@@ -3085,3 +3085,106 @@
 
 
 // console.log(res);
+
+
+// let a = 2 * (3 - 1);
+// let b = 6 - 2;
+
+// let a = 2 * (3 - 1);
+// let b = 6 - 2;
+
+// let result = a == b;
+
+// console.log(result);
+
+// let a = 5 * (7 - 4);
+// let b = 1 + 2 + 7;
+
+// let result = a > b;
+// console.log(result);
+
+// let a = 2 ** 4;
+// let b = 4 ** 2;
+
+// let result = a != b;
+// console.log(result);
+
+// Функция confirm в JavaScript
+
+// let ok = confirm('pidr?');
+// console.log(ok);
+
+// let ok = confirm('Текст вопроса');
+
+// if (ok) {
+//     alert('Вы ответили да !');
+// } else {
+//     console.log('вы ответили нет');
+// }
+
+// Спросите у пользователя, есть ли ему уже 18 лет. 
+// Если есть - выведите на экран алерт с текстом для взрослых, а если нет, выведите сообщение о том, что доступ пользователю запрещен.
+
+// let ok = confirm('Вам есть 18 лет?');
+
+// if (ok) {
+//     alert('Хорошо смотрите xd!');
+// } else {
+//     alert('Доступ запрещен');
+// }
+
+// let age = 17;
+// let adult;
+
+// if (age >= 18) {
+//     adult = true;
+// } else {
+//     adult = false;
+// }
+
+// console.log(adult);
+
+// let age = 17;
+// let adult;
+
+// if (age >= 18) {
+//     adult = true;
+// } else {
+//     adult = false;
+// }
+
+// console.log(adult);
+
+// let min = 41;
+
+// if (min >= 0 && min <= 20) {
+//     console.log('1');
+// }
+// if (min >= 21 && min <= 40) {
+//     console.log('2');
+// }
+// if (min >= 41 && min <= 60) {
+//     console.log('3');
+// }
+
+// В переменной arr содержится некоторый массив с числами. Напишите условие, которое проверит, что в массиве 3 элемента. 
+// Если это так, выведите на экран сумму элементов массива.
+
+// let arr = [1, 2, 3];
+
+// if (arr.length == 3) {
+//     let result = arr[0] + arr[1] + arr[2];
+//     console.log(result);
+// } else {
+//     console.log('Массив содержит больше 3 элементов!');
+// }
+
+// Дана переменная, содержащая некоторую строку. Проверьте, что эта строка начинается на символ 'a'.
+
+// let str = 'bvf';
+
+// if (str[0] == 'a' || str[0] == 'b') {
+//     console.log('Массив начинается с "a" или с "b"');
+// } else {
+//     console.log('Массив не начинается с "a" или с "b"');
+// }
