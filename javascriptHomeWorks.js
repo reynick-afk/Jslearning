@@ -3312,3 +3312,201 @@
 // } else {
 //     console.log('суммы не равны');
 // }
+
+
+// Накопление чисел в циклах JavaScript
+
+// let res = 0;
+
+// for (let i = 1; i <= 100; i++) {
+//     res += i;
+// }
+
+// console.log(res);
+
+// Найдите сумму четных чисел от 2 до 100.
+
+// let res = 0;
+
+// for (let i = 2; i <= 100; i++) {
+//     if (i % 2 === 0) {
+//         res += i;
+//         console.log(i)
+//     }
+// }
+
+// console.log(res);
+
+
+// Найдите сумму нечетных чисел от 1 до 99.
+// let res = 0;
+// for (let i = 1; i <= 99; i++) {
+//     if (i % 2 !== 0) {
+//         res += i;
+//         console.log(i);
+//     }
+// }
+
+// console.log(res);
+
+// Найдите произведение целых чисел от 1 до 20.
+
+// let res = 0;
+
+// for (let i = 1; i <= 20; i++) {
+//     res = i * i;
+//     console.log(i);
+// }
+// console.log(res);
+
+// Накопление элементов массивов в циклах JavaScript
+
+// let arr = [1, 2, 3, 4, 5];
+// let res = 0;
+
+// for (let elem of arr) {
+//     res += elem;
+// }
+
+// console.log(res); // искомая сумма
+
+
+// Найдите сумму элементов этого массива.
+// let arr = [2, 5, 9, 3, 1, 4];
+// let res = 0;
+
+// for (let elem of arr) {
+//     res += elem;
+// }
+
+// console.log(res);
+
+// let arr = [2, 5, 9, 3, 1, 4];
+// let res = 0;
+
+// for (let elem of arr) {
+//     if (elem % 2 === 0) {
+//         res += elem;
+//     }
+// }
+
+// console.log(res);
+
+// let arr = [2, 5, 9, 3, 1, 4];
+// let res = 0;
+
+// for (let elem of arr) {
+//     if (elem = elem ** 2) {
+//         res += elem;
+//         console.log(elem);
+//     }
+// }
+
+// console.log(res);
+
+
+// let arr = [2, 5, 9, 3, 1, 4];
+// let res = 1;
+
+// for (let elem of arr) {
+//     res *= elem;
+// }
+
+// console.log(res);
+
+// Формирование строк через циклы в JavaScript
+
+// let str = '';
+
+// for (let i = 0; i < 10; i++) {
+// 	str += 'x';
+// }
+
+// console.log(str); // выведет 'xxxxxxxxxx'
+
+
+// let str = '';
+
+// for (let i = 1; i <= 5; i++) {
+// 	str += i;
+// }
+
+// console.log(str); // выведет '12345'
+
+// С помощью цикла сформируйте строку, заполненную 5-тью дефисами.
+
+// let str = '';
+
+// for (let i = 0; i < 5; i++) {
+//     str += '-';
+// }
+
+// console.log(str);
+
+// С помощью цикла сформируйте строку '123456789'.
+
+// let num = '';
+
+// for (let i = 1; i < 10; i++) {
+//     num += i;
+// }
+
+// console.log(num);
+
+// С помощью цикла сформируйте строку '987654321'.
+
+// let num = '';
+
+// for (let i = 9; i > 0; i--) {
+//     num += i;
+// }
+
+// console.log(num);
+
+// С помощью цикла сформируйте строку '-1-2-3-4-5-6-7-8-9-'.
+
+// let num = '';
+
+// for (let i = 1; i < 10; i++) {
+//     num += '-' + i;
+// }
+
+// num += '-';
+
+// console.log(num);
+
+// Цифры числа при переборе циклом JavaScript
+
+// Переберите циклом числа от 10 до 1000 и выведите в консоль первую цифру каждого числа.
+
+// for (let i = 10; i <= 1000; i++) {
+//     let str = String(i);
+//     console.log(str[0]);
+// }
+
+// Переберите циклом числа от 10 до 1000 и выведите в консоль сумму первой и второй цифры каждого числа.
+
+// for (let i = 10; i <= 1000; i++) {
+//     let str = String(i);
+//     let sum = Number(str[0]) + Number(str[1]);
+//     console.log(sum);
+// }
+
+
+// Переберите циклом числа от 10 до 1000 и выведите те числа, первая цифра которых равна 1.
+
+// for (let i = 10; i <= 1000; i++) {
+//     let str = String(i);
+//     if (str[0] == '1') {
+//         console.log(str);
+//     }
+// }
+
+// Переберите циклом числа от 10 до 1000 и выведите на экран те числа, сумма двух первых цифр которых равна 5.
+
+// for (let i = 10; i <= 1000; i++) {
+//     let str = String(i);
+//     if (Number(str[0]) + Number(str[1]) == '5') {
+//         console.log(str);
+//     }
+// }
