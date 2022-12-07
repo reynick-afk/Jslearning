@@ -3600,3 +3600,121 @@
 //     document.write(str);
 //     str = '';
 // }
+
+
+// let arr = [];
+
+// for (let i = 1; i <= 5; i++) {
+//     arr.push(i);
+// }
+
+// console.log(arr); // выведет [1, 2, 3, 4, 5]
+
+// Используя цикл и метод push заполните массив числами от 1 до 10.
+
+// let arr = [];
+
+// for (let i = 1; i <= 10; i++) {
+//     arr.push(i);
+// }
+
+// console.log(arr);
+
+// Используя цикл и метод push заполните массив 10-ю буквами 'x'.
+
+// let arr = [];
+
+// for (let i = 1; i <= 10; i++) {
+//     arr.push('x');
+// }
+// console.log(arr);
+
+// Дан массив с числами. Переберите его циклом и запишите в новый массив только положительные из чисел.
+
+// let arr = [2, 2, 3, 4, 3, -12, 6, 7, 8, -13, -23, -34];
+// let arrSecond = [];
+
+
+// for (let i = 0; i <= arr.length; i++) {
+//     if (arr[i] >= 0) {
+//         arrSecond.push(arr[i]);
+//     }
+// }
+// console.log(arrSecond);
+
+// Дан массив с числами. Переберите этот массив циклом и возведите каждый элемент этого массива в квадрат.
+
+// let arr = [1, 2, 3, 4, 5, 6];
+
+// for (let i = 0; i < arr.length; i++) {
+//     arr[i] = arr[i] * arr[i];
+// }
+
+// console.log(arr);
+
+// Дан массив с числами. Переберите этот массив циклом и отнимите от каждого элемента единицу.
+
+
+// let arr = [13, 2, 33, 4, 5, 6];
+
+// for (let i = 0; i < arr.length; i++) {
+//     arr[i] = arr[i] - 1; // + 10
+// }
+
+// console.log(arr);
+
+// Заполнение объектов через цикл в JavaScript
+
+// let keys = ['a', 'b', 'c', 'd', 'e'];
+// let values = [1, 2, 3, 4, 5];
+
+// let obj = {};
+
+// for (let i = 0; i <= 4; i++) {
+//     let key = keys[i];
+//     let value = values[i];
+
+//     obj[key] = value;
+// }
+
+// console.log(obj);
+
+// let obj = {};
+
+// for (let i = 0; i <= 4; i++) {
+//     obj[keys[i]] = values[i];
+// }
+
+// console.log(obj);
+
+
+// let arr1 = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+// let arr2 = [1, 2, 3, 4, 5, 6, 7];
+
+// let obj = {};
+
+// for (let i = 0; i <= 6; i++) {
+//     obj[arr1[i]] = arr2[i];
+// }
+
+// console.log(obj);
+
+
+// Переберите этот объект циклом и запишите в новый объект те элементы, которые являются четными числами.
+
+let obj = { a: 1, b: 2, c: 3, d: 4, e: 5 };
+
+let objEven = {};
+
+for (let key in obj) {
+    for (let i = 0; i <= obj.length; i++) {
+        if (obj.key[i] % 2 == 0) {
+            objEven.push(obj.key[i]);
+        }
+    }
+
+}
+
+
+
+console.log(objEven);
