@@ -3702,19 +3702,65 @@
 
 // Переберите этот объект циклом и запишите в новый объект те элементы, которые являются четными числами.
 
+
+
+// let obj = { a: 1, b: 2, c: 3, d: 4, e: 5 };
+// let objFirst = [];
+// let objSec = [];
+
+// let objEven = {};
+
+// for (let key in obj) {
+//     if (obj[key] % 2 == 0) {
+//         objFirst.push(key);
+//         objSec.push(obj[key]);
+//     }
+// }
+
+// for (let i = 0; i <= 2; i++) {
+//     objEven[objFirst[i]] = objSec[i];
+
+
+// }
+
+// console.log(objFirst);
+// console.log(objSec);
+// console.log(objEven);
+
+
+
+// var p = {
+//     "p1": "value1",
+//     "p2": "value2",
+//     "p3": "value3"
+// };
+// for (var key in p) {
+//     if (p.hasOwnProperty(key)) {
+//         console.log(key + " -> " + p[key]);
+//     }
+// }
+
+// let obj = { a: 1, b: 2, c: 3, d: 4, e: 5 };
+// let box = {};
+// for (let key in obj) {
+//     const value = obj[key];
+//     if (value % 2 === 0) {
+//         box[key] = value;
+//     }
+// }
+
+// console.log(box);
+
+
+// Переберите этот объект циклом и создайте новый объект так, чтобы его ключами стали элементы старого объекта, а значениями - ключи старого объекта.
+
+
 let obj = { a: 1, b: 2, c: 3, d: 4, e: 5 };
-
-let objEven = {};
-
+let box = {};
 for (let key in obj) {
-    for (let i = 0; i <= obj.length; i++) {
-        if (obj.key[i] % 2 == 0) {
-            objEven.push(obj.key[i]);
-        }
-    }
+    const value = obj[key];
 
+    box[value] = key;
 }
 
-
-
-console.log(objEven);
+console.log(box);
