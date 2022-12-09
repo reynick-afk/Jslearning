@@ -3755,12 +3755,87 @@
 // Переберите этот объект циклом и создайте новый объект так, чтобы его ключами стали элементы старого объекта, а значениями - ключи старого объекта.
 
 
-let obj = { a: 1, b: 2, c: 3, d: 4, e: 5 };
-let box = {};
-for (let key in obj) {
-    const value = obj[key];
+// let obj = { a: 1, b: 2, c: 3, d: 4, e: 5 };
+// let box = {};
+// for (let key in obj) {
+//     const value = obj[key];
 
-    box[value] = key;
+//     box[value] = key;
+// }
+
+// console.log(box);
+
+
+// let obj = { x: 1, y: 2, z: 3 };
+// // Переберите этот объект циклом и возведите каждый элемент этого объекта в квадрат.
+
+// for (let key in obj) {
+//     obj[key] = obj[key] * obj[key];
+// }
+
+// console.log(obj);
+
+// let obj = { x: 1, y: 2, z: 3 };
+// // Переберите этот объект циклом и увеличьте каждый элемент этого объекта на единицу.
+
+// for (let key in obj) {
+//     obj[key] = obj[key] + 1;
+// }
+
+// console.log(obj);
+
+// flag
+
+// let arr = ['a', 'b', 's', 'd', 'e'];
+// let flag = false;
+
+// for (let elem of arr) {
+//     if (elem == 'c') {
+//         flag = true;
+//         break;
+//     }
+// }
+
+// if (flag === true) {
+//     console.log('+++');
+// } else {
+//     console.log('---');
+// }
+
+
+// Напишите код, который будет проверять число на то, простое оно или нет.
+
+// let num = 3;
+// let flag = false;
+
+// for (let i = 2; i < num; i++) {
+//     for (let j = 2; j < i; j++) {
+//         if (i % j == 0) {
+//             flag = true;
+//             break;
+//         }
+//     }
+// }
+
+// if (flag === true) {
+//     console.log('Простое');
+// }
+
+/// win
+
+
+let num = 531;
+let flag = false;
+
+for (let i = 2; i <= num; i++) {
+    for (let j = 2; j < i; j++) {
+        if (i % j == 0) {
+            flag = true;
+            break;
+        }
+    }
 }
 
-console.log(box);
+if (flag === true) {
+    console.log('Простое');
+}
