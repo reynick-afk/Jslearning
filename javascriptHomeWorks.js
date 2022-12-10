@@ -3821,21 +3821,98 @@
 //     console.log('Простое');
 // }
 
-/// win
+/// win // как оказалось не вин, ебал я рот
 
 
-let num = 531;
-let flag = false;
+// Дан массив с числами. Переберите его циклом и в каждой итерации цикла выведите два предыдущих элемента массива.
 
-for (let i = 2; i <= num; i++) {
-    for (let j = 2; j < i; j++) {
-        if (i % j == 0) {
-            flag = true;
-            break;
-        }
+
+// let arr = [1, 2, 3, 4, 5, 7];
+
+// for (let i = 4; i < arr.length; i++) {
+//     console.log(arr[i - 2]);
+// }
+
+
+
+// let arr = [1, 2, 3, 4, 5, 7, 4, 5, 7, 8];
+// // let sum = 0;
+// for (let i = 4; i < arr.length; i++) {
+//     console.log(arr[i - 2]);
+//     console.log(arr[i]);
+//     // console.log(arr[i - 2] + arr[i]);
+// }
+
+
+// Дан массив с числами.
+// Переберите его циклом и в каждой итерации цикла выведите сумму предыдущего,
+// текущего и следующего элементов массива.
+
+// let arr = [1, 2, 3, 4, 5, 7];
+
+
+// for (let i = 4; i < arr.length; i++) {
+//     arr[i - 2]
+
+// }
+
+
+// let arr1 = [1, 2, 3, 4, 5];
+
+// for (let i = 1; i < arr1.length; i++) {
+//     console.log(arr1[i - 1] + arr1[i]);
+// }
+
+
+// Возьмите из этого массива те элементы, у которых первая цифра 1 или 2, и найдите их сумму.
+
+// let arr = [10, 20, 30, 40, 21, 32, 51];
+// let sum = 0;
+
+// for (let elem in arr) {
+//     let elemStr = String(arr[elem]);
+//     if (elemStr[0] == 1 || elemStr[0] == 2) {
+//         let elemNum = Number(elemStr);
+
+//         sum += elemNum;
+//     }
+
+// }
+
+// console.log(sum);
+
+
+
+
+
+
+
+// Возьмите из этого массива те элементы, у которых первая цифра 1 или 2, и найдите их сумму.
+
+// let arr = [10, 20, 30, 32, 21, 23, 12];
+// let sum = 0;
+
+// for (let elem in arr) {
+//     let elemStr = String(arr[elem]);
+//     if (elemStr[0] == 1 || elemStr[0] == 2) {
+//         // let elemNum = Number(elemStr);
+//         sum += +elemStr;
+//     }
+// }
+
+// console.log(sum);
+
+let obj = { a: 10, b: 20, c: 30, d: 40, e: 50 };
+let sum = 0;
+
+for (let key in obj) {
+    let value = obj[key];
+    if (value === 1 || value === 2) {
+        sum += +key;
+
+        console.log('1');
     }
+
 }
 
-if (flag === true) {
-    console.log('Простое');
-}
+console.log(sum);
