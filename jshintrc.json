@@ -10,5 +10,6 @@
     "browser": true,
     "devel": true,
     "jquery": true,
-    "esversion": 7
+    "esversion": 7,
+    "asi": true
 }

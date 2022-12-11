@@ -3808,7 +3808,7 @@
 // let num = 3;
 // let flag = false;
 
-// for (let i = 2; i < num; i++) {
+// for (let i = 4; i < num; i++) {
 //     for (let j = 2; j < i; j++) {
 //         if (i % j == 0) {
 //             flag = true;
@@ -3902,17 +3902,419 @@
 
 // console.log(sum);
 
-let obj = { a: 10, b: 20, c: 30, d: 40, e: 50 };
-let sum = 0;
+// let obj = { a: 10, b: 20, c: 30, d: 40, e: 50 };
+// let sum = 0;
 
-for (let key in obj) {
-    let value = obj[key];
-    if (value === 1 || value === 2) {
-        sum += +key;
+// for (let key in obj) {
+//     let value = obj[key];
+//     if (value[0] === '1' || value === '2') {
+//         sum += +key;
 
-        console.log('1');
-    }
+//         console.log('1');
+//     }
+//     console.log(obj[key]);
+// }
 
-}
+// console.log(sum);
 
-console.log(sum);
+
+// Исправьте ошибки, допущенные в следующем коде:
+
+// let obj = { a: 10, b: 20, c: 30, d: 40, e: 50 };
+// let sum = 0;
+
+// for (let elem in obj) {
+//     if (elem[0] === '1' && elem[0] === '2') {
+//         sum += +elem;
+//     }
+// }
+
+// console.log(sum);
+
+
+// for (let i = 10; i >= 0; i--) {
+//     console.log(i);
+// }
+
+// let i = 0;
+
+// while (i < 10) {
+//     i++;
+//     console.log(i);
+// }
+
+// let res = 0;
+
+
+// for (let i = 1; i <= 10; i++) {
+//     res += i;
+// }
+
+// console.log(res);
+
+// let res = 1;
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log(i);
+//     res *= i;
+// }
+
+// console.log(res);
+
+
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+
+// for (let elem of arr) {
+//     console.log(elem);
+//     const elemN = Number(elem);
+//     sum += elemN;
+// }
+
+// console.log(sum); // должно вывести 15
+
+
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+
+// for (let elem of arr) {
+
+//     sum += +elem;
+// }
+
+// console.log(sum); // должно вывести 15
+
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+
+// for (let elem of arr) {
+//     sum += +elem;
+// }
+
+// console.log(sum); // должно вывести 15
+
+
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//     sum += +arr[i];
+// }
+
+// console.log(sum); // почему-то выводит NaN
+
+
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//     sum += +arr[i];
+// }
+
+// console.log(sum); // почему-то выводит не 15
+
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//     sum += +arr[i];
+// }
+
+// console.log(sum); // почему-то выводит не 15
+
+// let arr = [1, 2, 3, 4, 5];
+// let arrS = [];
+// for (let elem of arr) {
+//     elem = elem * elem;
+//     arrS.push(elem);
+
+// }
+
+// console.log(arrS);
+
+
+// let arr = [];
+
+// for (let i = 1; i <= 5; i++) {
+//     arr.push(i);
+// }
+
+// console.log(arr);
+
+// let obj = { a: 1, b: 2, c: 3 };
+// let sum = 0;
+
+// for (let elem in obj) {
+//     const value = obj[elem]
+//     sum += value;
+
+
+// }
+
+// console.log(sum);
+
+// let obj = { a: 1, b: 2, c: 3 };
+// let sum = 0;
+
+// for (let key in obj) {
+
+//     sum += obj[key];
+// }
+
+// console.log(sum);
+
+// let arr = [1, 2, 3, 4, 5];
+// let res = '';
+
+// for (let elem of arr) {
+
+//     if (elem == 3) {
+//         res = '+++';
+//         break;
+//     } else {
+//         res = '---';
+//     }
+// }
+
+// console.log(res);
+
+// let arr = [];
+
+// for (let i = 1; i <= 5; i++) {
+//     arr.push(i);
+// }
+
+// console.log(arr);
+
+
+// let arr = [1, 2, 3, 4, 5];
+// let res = false;
+
+// for (let elem of arr) {
+// 	if (elem === 3) {
+// 		 res = true;
+// 		break;
+// 	}
+// }
+
+// console.log(res);
+
+// let arr = [1, 2, 3, 4, 5];
+
+// for (let elem of arr) {
+//     if (elem % 2 == 0) {
+//         console.log(elem);
+//     }
+// }
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let res = [];
+// for (let elem of arr) {
+//     if (elem % 2 != 0) {
+//         res.push(elem);
+//     }
+// }
+
+// console.log(res);
+
+// Выведите с помощью цикла столбец чисел от 1 до 100.
+
+// for (let i = 1; i <= 100; i++) {
+//     console.log(i);
+// }
+
+// Выведите с помощью цикла столбец чисел от 100 до 1.
+
+// for (let i = 100; i > 0; i--) {
+//     console.log(i)
+// }
+
+// Выведите с помощью цикла столбец четных чисел от 1 до 100.
+
+// for (let i = 1; i < 100; i++) {
+//     if (i % 2 == 0) {
+//         console.log(i);
+//     }
+// }
+
+// Заполните массив 10-ю иксами с помощью цикла.
+
+// let arr = [];
+
+// for (let i = 1; i <= 10; i++) {
+//     arr.push('x')
+// }
+// console.log(arr);
+
+// Дан массив с числами. С помощью цикла выведите только те элементы массива, которые больше нуля и меньше 10-ти.
+
+// let arr = [10, 23, 43, 53, 5, 3, 6]
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 0 && arr[i] < 10) {
+//         console.log(arr[i]);
+//     }
+// }
+
+// Дан массив с числами. С помощью цикла проверьте, что в нем есть элемент со значением 5.
+
+// let arr = [10, 5, 4, 4]
+
+// for (let elem of arr) {
+//     if (elem == 5) {
+//         console.log('+++');
+//         break;
+//     } else {
+//         console.log('---');
+//     }
+// }
+
+// Дан массив с числами. С помощью цикла найдите сумму квадратов элементов этого массива.
+
+// let arr = [1, 4, 5, 6, 4]
+// let sum = 0
+
+// for (let elem of arr) {
+//     elem = elem * elem
+//     sum += elem
+// }
+// console.log(sum)
+
+// Дан массив с числами. Найдите среднее арифметическое его элементов.
+
+// let arr = [2, 4, 5, 6, 7];
+// let sum = 0;
+
+
+// for (let elem of arr) {
+//     sum += elem;
+
+// }
+
+
+
+// console.log(sum / arr.length);
+
+// Напишите скрипт, который будет находить факториал числа. 
+// Факториал - это произведение всех целых чисел от единицы до заданного числа.
+
+// let num = 2;
+// let fact = 1;
+// for (let i = 1; i <= num; i++) {
+
+//     fact *= i
+
+// }
+
+// console.log(fact);
+
+
+// Заполните массив числами от 10 до 1 с помощью цикла.
+
+// let arr = []
+
+// for (let i = 1; i <= 10; i++) {
+//     arr.push(i);
+// }
+// console.log(arr);
+
+// Дан массив с числами. Числа могут быть положительными и отрицательными. Найдите сумму положительных элементов массива.
+
+// let arr = [1, 4, 5, 6, -2, -3, -4]
+// let sum = 0
+
+// for (let elem of arr) {
+//     if (elem > 0) {
+//         sum += elem
+//     }
+// }
+
+// console.log(sum)
+
+
+// let arr = [10, 20, 30, 50, 235, 3000];
+// // Выведите на экран только те числа из массива, которые начинаются на цифру 1, 2 или 5.
+
+// for (let elem of arr) {
+//     let value = elem.toString();
+//     if (value[0] == '1' || value[0] == '2' || value[0] == '5') {
+//         console.log(value);
+//     }
+// }
+
+// Дан массив с числами. Выведите элементы этого массива в обратном порядке.
+
+// let arr = [1, 23, 45, 5, 6, 67]
+
+// for (let i = arr.length - 1; i >= 0; i--) {
+//     console.log(arr[i])
+// }
+
+// Дан массив с числами. С помощью цикла выведите на экран все элементы, значение которых совпадает с их порядковым номером в массиве.
+
+// let arr = [12, 23, 4, 5, 3, 2, 6, 7]
+
+// for (let i = 0; i <= arr.length; i++) {
+//     if (i == arr[i]) {
+//         console.log(arr[i])
+//     }
+// }
+
+// Дан массив с числами. С помощью цикла for и функции document.write выведите каждый элемент массива с новой строки. 
+// Используйте для этого тег br.
+
+// let arr = [10, 42, 56, 5, 6, 56, 5, 6]
+
+// for (let elem of arr) {
+//     document.write(elem)
+//     document.write('<br>')
+// }
+
+// Составьте массив дней недели. С помощью цикла for выведите все дни недели, а выходные дни выведите жирным.
+
+// let arr = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье']
+
+// for (let i = 0; i < arr.length; i++) {
+
+
+//     if (arr[i] === 'Суббота' || arr[i] === 'Воскресенье') {
+//         let weekends = arr[i]
+//         document.write(`<strong>${weekends}<br>`)
+//     } else {
+//         document.write(arr[i]);
+//         document.write('<br>');
+//     }
+
+// }
+
+
+// Составьте массив дней недели. С помощью цикла for выведите все дни недели, а текущий день выведите курсивом. 
+// Номер текущего дня должен храниться в переменной day.
+
+// let week = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье']
+// let day = 4;
+
+// for (let i = 0; i < week.length; i++) {
+//     if (i === day - 1) {
+//         let toDay = week[i]
+//         document.write('<i>')
+//         document.write(toDay)
+//         document.write('</i>')
+//     } else {
+//         document.write(week[i])
+//         document.write('<br>')
+//     }
+// }
+
+Дан следующий объект с работниками и их зарплатами:
+
+    let obj = {
+        employee1: 100,
+        employee2: 200,
+        employee3: 300,
+        employee4: 400,
+        employee5: 500,
+        employee6: 600,
+        employee7: 700,
+    };
+Увеличьте зарплату каждого работника на 10 %
