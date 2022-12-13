@@ -4306,15 +4306,466 @@
 //     }
 // }
 
-Дан следующий объект с работниками и их зарплатами:
+// Дан следующий объект с работниками и их зарплатами:
+// Увеличьте зарплату каждого работника на 10 %
 
-    let obj = {
-        employee1: 100,
-        employee2: 200,
-        employee3: 300,
-        employee4: 400,
-        employee5: 500,
-        employee6: 600,
-        employee7: 700,
-    };
-Увеличьте зарплату каждого работника на 10 %
+// let obj = {
+//     employee1: 100,
+//     employee2: 200,
+//     employee3: 300,
+//     employee4: 400,
+//     employee5: 500,
+//     employee6: 600,
+//     employee7: 700,
+// };
+
+
+// for (let key in obj) {
+//     let value = obj[key]
+//     value *= 1.1
+//     console.log(Math.floor(value)) // остаток
+
+// }
+
+// Модифицируйте предыдущую задачу так, чтобы зарплата увеличивалась только тем работникам, у которых она меньше или равна 400.
+
+// let obj = {
+//     employee1: 100,
+//     employee2: 200,
+//     employee3: 300,
+//     employee4: 400,
+//     employee5: 500,
+//     employee6: 600,
+//     employee7: 700,
+// };
+
+
+// for (let key in obj) {
+//     let value = obj[key]
+
+//     if (value <= 400) {
+//         value *= 1.1
+//         console.log(Math.floor(value)) // остаток
+//     }
+// }
+
+
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = [6, 7, 8, 9, 10];
+
+// // С помощью этих массивов создайте новый объект, сделав его ключами элементы первого массива, а значениями - элементы второго.
+
+// let obj = {}
+
+// for (i = 0; i < arr1.length; i++) {
+//     obj[arr1[i]] = arr2[i]
+// }
+
+// console.log(obj)
+
+// let obj = { 1: 6, 2: 7, 3: 8, 4: 9, 5: 10 };
+// // Найдите сумму ключей этого объекта и поделите ее на сумму значений.
+// let sum = 0
+// let sum2 = 0
+
+
+// for (let key in obj) {
+//     let value = obj[key]
+//     sum += Number(key)
+//     sum2 += value
+
+// }
+
+// console.log(sum / sum2)
+
+
+// let obj = { 'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5 };
+// // Запишите ключи этого объекта в один массив, а значения - в другой.
+
+// let arr1 = Object.keys(obj)
+// let arr2 = Object.values(obj)
+
+// console.log(arr1)
+// console.log(arr2)
+
+// let obj = {
+//     1: 125,
+//     2: 225,
+//     3: 128,
+//     4: 356,
+//     5: 145,
+//     6: 281,
+//     7: 452,
+// };
+
+// let arr = []
+//     // Запишите в новый массив элементы, значение которых начинается с цифры 1 или цифры 2. 
+//     // То есть у вас в результате получится вот такой массив:
+
+// for (let key in obj) {
+//     let value = obj[key].toString()
+
+//     if (value[0] === '1' || value[0] === '2') {
+//         arr.push(value)
+//         console.log('1')
+//     }
+// }
+
+// console.log(arr)
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// // Создайте из этого массива следующий объект:
+
+// // { 1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e' };
+
+// let obj = {}
+
+// for (let i = 0; i < arr.length; i++) {
+//     obj[i + 1] = arr[i]
+// }
+
+// console.log(obj);
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// // Создайте из этого массива следующий объект:
+
+// // { 'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5 };
+
+// let obj = {}
+
+// for (let i = 0; i < arr.length; i++) {
+//     obj[arr[i]] = i + 1
+// }
+
+// console.log(obj)
+
+// let arr = [
+//     ['a', 'b', 'c'],
+//     ['d', 'e', 'f'],
+//     ['g', 'h', 'i'],
+// ];
+
+// console.log(arr[0][1])
+
+// let arr = [
+//     ['a', 'b', 'c'],
+//     ['d', 'e', 'f'],
+//     ['g', 'h', 'i'],
+//     ['j', 'k', 'l'],
+// ];
+// // Выведите с его помощью элементы с текстом 'l', 'e', 'g' и 'a'.
+
+// console.log(arr[3][2])
+// console.log(arr[1][1])
+// console.log(arr[2][0])
+// console.log(arr[0][0])
+
+
+// let arr = [
+//     [1, 2],
+//     [3, 4],
+//     [5, 6]
+// ];
+// let sum = arr[0][0] + arr[0][1] + arr[1][0] + arr[1][1] + arr[2][0] + arr[2][1]
+
+
+// console.log(sum)
+
+// let arr = [
+//     [
+//         [1, 2],
+//         [3, 4],
+//     ],
+//     [
+//         [5, 6],
+//         [7, 8],
+//     ],
+// ];
+
+// let sum = arr[0][0][0] + arr[0][1][1] + arr[1][0][1] + arr[1][1][1]
+
+
+// console.log(sum)
+
+
+// let arr = [
+//     [1, 2, 3, [4, 5, [6, 7]]],
+//     [8, [9, 10]]
+// ];
+
+// let sum = (arr[0][0] + arr[0][1] + arr[0][2] + arr[0][3][0] + arr[0][3][1] + arr[0][3][2][0] + arr[0][3][2][1])
+
+// console.log(sum)
+
+// Перебор многомерных массивов в JavaScript
+
+
+
+// let arr = [
+//     [1, 2, 3, 4, 5],
+//     [6, 7, 8],
+//     [9, 10]
+// ];
+
+// let sum = 0
+
+// for (let subArr of arr) {
+//     for (let elem of subArr) {
+//         console.log(elem);
+//         console.log(subArr)
+//         sum += elem
+//     }
+// }
+
+// console.log(sum)
+
+
+
+// let arr = [
+//     [
+//         [1, 2],
+//         [3, 4]
+//     ],
+//     [
+//         [5, 6],
+//         [7, 8]
+//     ]
+// ];
+// // С помощью вложенных циклов найдите сумму элементов этого массива.
+// let sum = 0
+
+// for (let subArr of arr) {
+//     for (let subArrSec of subArr) {
+//         for (let elem of subArrSec) {
+//             sum += elem
+//             console.log(elem)
+//         }
+//     }
+// }
+
+// console.log(sum)
+
+// let arr = [[1, 2, 3, 4, 5], [6, 7, 8], [9, 10]];
+
+// for (let i = 0; i < arr.length; i++) {
+// 	for (let j = 0; j < arr[i].length; j++) {
+// 		console.log(arr[i][j]);
+// 	}
+// }
+
+// let arr = [
+//     [1, 2, 3],
+//     [4, 5],
+//     [6]
+// ];
+// let sum = 0
+
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr[i].length; j++) {
+//         console.log(arr[i][j])
+//         sum += arr[i][j]
+//     }
+
+// }
+
+// console.log(sum)
+
+// let arr = [
+//     [
+//         [1, 2],
+//         [3, 4]
+//     ],
+//     [
+//         [5, 6],
+//         [7, 8]
+//     ]
+// ];
+// let sum = 0
+
+
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr[i].length; j++) {
+//         for (let k = 0; k < arr[i][j].length; k++) {
+//             sum += arr[i][j][k]
+//         }
+//     }
+
+// }
+
+// console.log(sum)
+
+// [[1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5]]
+
+// let arr = []
+
+// for (let i = 0; i < 3; i++) {
+//     arr[i] = []
+
+//     for (let j = 0; j < 5; j++) {
+//         arr[i].push(j + 1)
+//     }
+// }
+
+// console.log(arr)
+
+// [
+// 	['x', 'x', 'x', 'x'],
+// 	['x', 'x', 'x', 'x'],
+// 	['x', 'x', 'x', 'x']
+// ]
+
+// let arr = []
+
+// for (let i = 0; i < 3; i++) {
+//     arr[i] = []
+//     for (let j = 0; j < 4; j++) {
+//         arr[i].push('x')
+//     }
+// }
+
+// console.log(arr)
+
+// [
+// 	[
+// 		[1, 2, 3, 4, 5],
+// 		[1, 2, 3, 4, 5],
+// 	],
+// 	[
+// 		[1, 2, 3, 4, 5],
+// 		[1, 2, 3, 4, 5],
+// 	],
+// 	[
+// 		[1, 2, 3, 4, 5],
+// 		[1, 2, 3, 4, 5],
+// 	],
+// ]
+
+// let arr = []
+
+// for (let i = 0; i < 3; i++) {
+//     arr[i] = []
+//     for (let j = 0; j < 2; j++) {
+//         arr[i][j] = []
+//         for (let k = 0; k < 5; k++) {
+//             arr[i][j].push(k + 1)
+//         }
+//     }
+// }
+// console.log(arr)
+// console.log(arr)
+
+// let arr = [];
+
+// for (let i = 0; i < 3; i++) {
+//     arr[i] = []
+//     for (let j = 1; j <= 5; j++) {
+//         arr[i].push(j);
+//     }
+// }
+
+// console.log(arr);
+
+// let arr = [];
+
+// for (let i = 0; i < 3; i++) {
+//     arr[i] = [];
+
+//     for (let j = 1; j <= 5; j++) {
+//         arr[i].push(j);
+//     }
+// }
+
+// console.log(arr);
+
+// let arr = [];
+
+// for (let i = 0; i < 3; i++) {
+//     arr[i] = [];
+
+//     for (let j = 1; j <= 5; j++) {
+//         arr[i].push(j);
+//     }
+// }
+
+// console.log(arr);
+
+
+// [
+//     [1, 2],
+//     [3, 4],
+//     [5, 6],
+//     [7, 8]
+// ]
+
+// let arr = []
+
+
+// for (let i = 0, k = 1; i < 4; i++) {
+//     arr[i] = []
+//     for (let j = 0; j < 2; j++) {
+//         arr[i].push(k++)
+//     }
+// }
+
+// console.log(arr)
+
+
+// [[2, 4, 6], [8, 10, 12], [14, 16, 18], [20, 22, 24]]
+
+// let arr = []
+
+// for (let i = 0, k = 1; i < 4; i++) {
+//     arr[i] = []
+//     for (j = 0; j < 3; j++) {
+//         if (k % 2 !== 0) {
+//             k++
+//         }
+//         arr[i].push(k++)
+//     }
+// }
+
+// console.log(arr)
+
+// [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
+
+// let arr = []
+
+// for (let i = 0, k = 1; i < 4; i++) {
+//     arr[i] = []
+//     for (j = 0; j < 1; j++) {
+//         arr[i][j] = []
+//         for (let z = 0; z < 2; z++) {
+//             arr[i][j].push(k++)
+//         }
+//     }
+// }
+
+// console.log(arr)
+
+
+// let arr = [];
+// let k = 1;
+
+// for (let i = 0; i < 3; i++) {
+//     arr[i] = [];
+
+//     for (let j = 0; j < 3; j++) {
+//         arr[i][j] = k;
+//         k++;
+//     }
+// }
+
+// console.log(arr);
+
+
+let arr = [];
+
+for (let i = 0, k = 1; i < 3; i++) {
+    arr[i] = [];
+
+    for (let j = 0, k++; j < 3; j++) {
+        arr[i][j] = k;
+    }
+}
+
+console.log(arr);
