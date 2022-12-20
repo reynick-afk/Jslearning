@@ -4758,14 +4758,523 @@
 // console.log(arr);
 
 
-let arr = [];
+// let obj = {
+//     1: {
+//         1: 11,
+//         2: 12,
+//         3: 13,
+//     },
+//     2: {
+//         1: 21,
+//         2: 22,
+//         3: 23,
+//     },
+//     3: {
+//         1: 24,
+//         2: 25,
+//         3: 26,
+//     },
+// }
 
-for (let i = 0, k = 1; i < 3; i++) {
-    arr[i] = [];
+// let sum = 0
 
-    for (let j = 0, k++; j < 3; j++) {
-        arr[i][j] = k;
-    }
-}
+// for (let key in obj) {
+//     let subObj = obj[key]
+//     for (let subKey in subObj) {
+//         sum += subObj[subKey]
+//     }
+// }
 
-console.log(arr);
+// console.log(sum)
+
+// let obj = {
+//     1: {
+//         1: {
+//             1: 111,
+//             2: 112,
+//             3: 113,
+//         },
+//         2: {
+//             1: 121,
+//             2: 122,
+//             3: 123,
+//         },
+//     },
+//     2: {
+//         1: {
+//             1: 211,
+//             2: 212,
+//             3: 213,
+//         },
+//         2: {
+//             1: 221,
+//             2: 222,
+//             3: 223,
+//         },
+//     },
+//     3: {
+//         1: {
+//             1: 311,
+//             2: 312,
+//             3: 313,
+//         },
+//         2: {
+//             1: 321,
+//             2: 322,
+//             3: 323,
+//         },
+//     },
+// }
+
+// let sum = 0
+
+// for (let key in obj) {
+//     let subObj = obj[key]
+//     console.log(subObj)
+//     for (let subKey in subObj) {
+//         let subObjSec = subObj[subKey]
+//         for (let subKeySec in subObjSec) {
+//             sum += subObjSec[subKeySec]
+//         }
+//     }
+// }
+
+// console.log(sum)
+
+
+// let days = {
+//     'ru': ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'],
+//     'en': ['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
+// };
+
+// console.log(days['ru'][0]); // выведет 'пн'
+// console.log(days['en'][2]); // выведет 'wd'
+
+// let students = {
+//     'group1': ['name11', 'name12', 'name13'],
+//     'group2': ['name21', 'name22', 'name23'],
+//     'group3': ['name31', 'name32', 'name33'],
+// };
+
+// console.log(students['group3'][0])
+
+// let students = {
+//     'group1': ['student11', 'student12', 'student13'],
+//     'group2': ['student21', 'student22', 'student23'],
+//     'group3': ['student31', 'student32'],
+// };
+
+// for (let group in students) {
+//     for (let name of students[group])
+//         console.log(name)
+// }
+
+// let data = {
+//     1: [
+//         'data11',
+//         'data12',
+//         'data13',
+//     ],
+//     2: [
+//         'data21',
+//         'data22',
+//         'data23',
+//     ],
+//     3: [
+//         'data31',
+//         'data32',
+//         'data33',
+//     ],
+//     4: [
+//         'data41',
+//         'data42',
+//         'data43',
+//     ],
+// };
+
+// for (let group in data) {
+//     for (let string of data[group])
+//         console.log(string)
+// }
+
+
+// let data = [{
+//         1: 'data11',
+//         2: 'data12',
+//         3: 'data13',
+//     },
+//     {
+//         1: 'data21',
+//         2: 'data22',
+//         3: 'data33',
+//     },
+//     {
+//         1: 'data31',
+//         2: 'data32',
+//         3: 'data33',
+//     },
+// ];
+
+
+// for (let groups in data) {
+//     let group = data[groups]
+
+//     for (let items in group) {
+//         let names = group[items]
+//         console.log(names)
+//     }
+// }
+
+// let data = [{
+//         1: [
+//             'data111',
+//             'data112',
+//             'data113',
+//         ],
+//         2: [
+//             'data121',
+//             'data122',
+//             'data123',
+//         ],
+//     },
+//     {
+//         1: [
+//             'data211',
+//             'data212',
+//             'data213',
+//         ],
+//         2: [
+//             'data221',
+//             'data222',
+//             'data223',
+//         ],
+//     },
+//     {
+//         1: [
+//             'data411',
+//             'data412',
+//             'data413',
+//         ],
+//         2: [
+//             'data421',
+//             'data422',
+//             'data423',
+//         ],
+//     },
+// ];
+
+// for (let group in data) {
+//     let subGroup = data[group]
+
+//     for (let items in subGroup) {
+//         let names = subGroup[items]
+//         console.log(names)
+//     }
+// }
+
+// let employees = [{
+//         name: 'name1',
+//         salary: 300,
+//     },
+//     {
+//         name: 'name2',
+//         salary: 400,
+//     },
+//     {
+//         name: 'name3',
+//         salary: 500,
+//     },
+// ];
+
+// for (let user of employees) {
+//     console.log(user.name + ' - ' + user.salary)
+// }
+
+
+// let employees = [{
+//         name: 'name1',
+//         salary: 300,
+//     },
+//     {
+//         name: 'name2',
+//         salary: 400,
+//     },
+//     {
+//         name: 'name3',
+//         salary: 500,
+//     },
+// ];
+
+
+// let sumSalary = 0
+
+// for (let group of employees) {
+//     sumSalary += group.salary
+// }
+
+// console.log(sumSalary)
+
+// let employees = [{
+//         name: 'name1',
+//         salary: 300,
+//         age: 28,
+//     },
+//     {
+//         name: 'name2',
+//         salary: 400,
+//         age: 29,
+//     },
+//     {
+//         name: 'name3',
+//         salary: 500,
+//         age: 30,
+//     },
+//     {
+//         name: 'name4',
+//         salary: 600,
+//         age: 31,
+//     },
+//     {
+//         name: 'name5',
+//         salary: 700,
+//         age: 32,
+//     },
+// ];
+
+// for (let elem of employees) {
+//     if (elem.age >= 30) {
+//         console.log(`${elem.name} + ${elem.salary} + ${elem.age}`)
+//     }
+// }
+
+// let months = {
+//     'ru': [
+//         'январь',
+//         'февраль',
+//         'март',
+//         'апрель',
+//         'май',
+//         'июнь',
+//         'июль',
+//         'август',
+//         'сентябрь',
+//         'октябрь',
+//         'ноябрь',
+//         'декабрь',
+//     ],
+//     'en': [
+//         'january',
+//         'february',
+//         'march',
+//         'april',
+//         'may',
+//         'june',
+//         'july',
+//         'august',
+//         'september',
+//         'october',
+//         'november',
+//         'december',
+//     ],
+// };
+
+// let lang = 'ru'; // может быть или 'ru' или 'en'
+// let month = 5; // число от 0 до 11
+
+// console.log(months[lang][month])
+
+// let affairs = {
+//     '2018': {
+//         11: {
+//             29: ['дело111', 'дело112', 'дело113'],
+//             30: ['дело121', 'дело122', 'дело123'],
+//         },
+//         12: {
+//             30: ['дело211', 'дело212', 'дело213'],
+//             31: ['дело221', 'дело222', 'дело223'],
+//         },
+//     },
+//     '2019': {
+//         12: {
+//             29: ['дело311', 'дело312', 'дело313'],
+//             30: ['дело321', 'дело322', 'дело323'],
+//             31: ['дело331', 'дело332', 'дело333'],
+//         }
+//     },
+// }
+
+// let yearFirst = '2018'
+// let yearSecond = '2019'
+
+// let month = 11
+
+
+// console.log(affairs[yearFirst][month][29])
+
+// Автор следующего кода хотел вывести элемент со значением '24':
+
+//     let obj = {
+//         key1: {
+//             key2: '12',
+//             key3: '13',
+//         },
+//         key2: {
+//             key4: '24',
+//             key5: '25',
+//         },
+//     }
+
+// let key1 = 'key2';
+// let key2 = 'key4';
+// console.log(obj[key1][key2]);
+// Код, однако, выводит не то, что ожидал автор.Исправьте ошибку.
+
+
+// let obj = {
+//     key1: {
+//         key2: '12',
+//         key3: '13',
+//     },
+//     key2: {
+//         key4: '24',
+//         key5: '25',
+//     },
+// }
+
+// let key1 = 'key2';
+// let key2 = 'key4';
+// console.log(obj[key1][key2]);
+
+// Код, однако, выводит не то, что ожидал автор. Исправьте ошибку.
+
+// let obj = {
+//     key1: {
+//         key2: '12',
+//         key3: '13',
+//     },
+//     key2: {
+//         key4: '24',
+//         key5: '25',
+//     },
+// }
+
+// let key1 = 'key2';
+// let key2 = 'key4'
+// console.log(obj[key1][key2]);
+
+// let employees = [{
+//         name: 'name1',
+//         salary: 300,
+//         age: 28,
+//     },
+//     {
+//         name: 'name2',
+//         salary: 400,
+//         age: 29,
+//     },
+//     {
+//         name: 'name3',
+//         salary: 500,
+//         age: 30,
+//     },
+// ];
+
+// employees.push({
+//     name: 'name4',
+//     salary: 4300,
+//     age: 22,
+// })
+
+// console.log(employees)
+
+// let affairs = {
+//     '2019-12-28': ['data11', 'data12', 'data13'],
+//     '2019-12-29': ['data21', 'data22', 'data23'],
+//     '2019-12-30': ['data31', 'data32', 'data33'],
+// }
+
+// // Добавьте еще одно дело в дату '2019-12-29'.
+
+
+// affairs['2019-12-31'] = ['data41', 'data42']
+// console.log(affairs)
+
+
+
+// let students = {
+//     'group1': {
+//         'subgroup11': ['student111', 'student112', 'student113'],
+//         'subgroup12': ['student121', 'student122', 'student123'],
+//     },
+//     'group2': {
+//         'subgroup21': ['student211', 'student212', 'student213'],
+//         'subgroup22': ['student221', 'student222', 'student223'],
+//     },
+//     'group3': {
+//         'subgroup31': ['student311', 'student312', 'student313'],
+//         'subgroup32': ['student321', 'student322', 'student323'],
+//     },
+// };
+
+// Добавьте нового студента в подгруппу 'subgroup11'
+
+
+// students['group1']['subgroup11'].push('student114')
+// console.log(students)
+
+
+// Добавьте в первую группу еще одну подгруппу.
+
+
+// students['group1']['subgroup13'] = []
+// console.log(students)
+
+// Сделайте четвертую группу, в ней сделайте подгруппу и добавьте в нее двух новых студентов.
+
+// students.group4 = {}
+
+// students['group4']['subgroup41'] = []
+
+// students['group4']['subgroup41'].push('student421', 'student422')
+
+
+// console.log(students)
+
+
+// Возведите 2 в 10 степень.
+
+// console.log(Math.pow(2, 10))
+
+// // Найдите квадратный корень из 245.
+
+// console.log(Math.sqrt(245))
+
+
+// [4, 2, 5, 19, 13, 0, 10]
+// Найдите квадратный корень из суммы кубов его элементов. Для решения воспользуйтесь циклом for.
+
+
+// let arr = [4, 2, 5, 19, 13, 0, 10]
+// let sum = 0
+
+// for (let elem of arr) {
+
+
+//     sum += elem
+// }
+
+// console.log(Math.sqrt(sum))
+
+// Найдите квадратный корень из 379. Результат округлите до целых, до десятых, до сотых.
+
+let num = 379
+let sqrt = Math.sqrt(num)
+let fix = sqrt.toFixed(3)
+let round = Math.round(sqrt.fix)
+
+console.log(fix)
+
+// Найдите квадратный корень из 587. 
+// Округлите результат в большую и меньшую стороны, запишите результаты округления в объект с ключами 'floor' и 'ceil'.
+
+// let num = 587

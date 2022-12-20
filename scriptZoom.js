@@ -1,0 +1,1 @@
+const ZOOM_BY_IMG = document.getElementById("myImg")
