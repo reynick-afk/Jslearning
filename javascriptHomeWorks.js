@@ -5267,14 +5267,206 @@
 
 // Найдите квадратный корень из 379. Результат округлите до целых, до десятых, до сотых.
 
-let num = 379
-let sqrt = Math.sqrt(num)
-let fix = sqrt.toFixed(3)
-let round = Math.round(sqrt.fix)
+// let num = 379
+// let sqrt = Math.sqrt(num)
+// let fix = sqrt.toFixed(3)
+// let round = Math.round(sqrt.fix)
 
-console.log(fix)
+// console.log(fix)
 
 // Найдите квадратный корень из 587. 
 // Округлите результат в большую и меньшую стороны, запишите результаты округления в объект с ключами 'floor' и 'ceil'.
 
 // let num = 587
+
+// let sqrt = Math.sqrt(num)
+
+// let floor = Math.floor(sqrt)
+// let ceil = Math.ceil(sqrt)
+
+// console.log(floor)
+// console.log(ceil)
+
+// console.log(Math.max(4, -2, 5, 19, -130, 0, 10))
+
+
+// function getRandomInt(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// console.log(getRandomInt(1, 100));
+
+
+// С помощью цикла заполните массив 10-ю случайными целыми числами.
+
+// let arr = []
+
+// function getRandomInt(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// console.log(getRandomInt(1, 100));
+
+// for (let i = 0; i <= 10; i++) {
+//     arr.push(getRandomInt(1, 100))
+// }
+// console.log(arr)
+
+// Даны переменные a и b.
+// Найдите модуль разности a и b.Проверьте работу скрипта самостоятельно для различных a и b.
+
+
+// let a = 1
+// let b = 10
+
+// console.log(Math.abs(a - b))
+
+// Дана строка 'js'. Сделайте из нее строку 'JS'.
+
+// let str = 'js'
+
+// console.log(str.toUpperCase())
+// console.log((str.toUpperCase()).toLowerCase())
+
+
+// let str = 'abcde';
+// let sub = str.substr(-5);
+
+// console.log(sub);
+
+// let str = 'abcde';
+// let sub = str.substr(0, 4);
+
+// console.log(sub);
+
+
+// Дана строка 'я учу javascript!'. 
+// Вырежьте из нее слово 'учу' и слово 'javascript' 
+// тремя разными способами (через substr, substring, slice).
+
+// let str = 'я учу javascript!'
+
+// let subStr = str.substring(0, 2)
+
+// console.log(subStr)
+
+// Дана строка 'abcde'. Определите позицию буквы 'c' в этой строке.
+
+// let str = 'abcde'
+// let sub = str.lastIndexOf('c')
+
+// console.log(sub) // 2
+
+// Дана строка. Проверьте, есть ли в этой строке символ 'a'.
+
+// let str = 'abcde'
+// let sub = str.indexOf('a')
+
+// console.log(sub)
+
+// Дана строка. Проверьте, заканчивается ли эта строка на символ 'a'.
+
+// let str = 'abcde'
+// let sub = str.indexOf('a', 4)
+
+// console.log(sub)
+
+// Дана строка. Проверьте, начинается ли эта строка на 'http://'.
+
+// let arr = 'http://'
+
+// let sub = arr.indexOf('http://')
+
+// console.log(sub)
+
+
+// Дана строка. Проверьте, заканчивается ли эта строка на '.html'.
+
+// let arr = '.html'
+
+// let sub = arr.indexOf('.html')
+
+// console.log(sub)
+
+// let arr = 'http://'
+
+// let sub = arr.startsWith('http://')
+// let subEnd = arr.endsWith('http://')
+
+// console.log(subEnd)
+
+// Дана строка '1-2-3-4-5'. С помощью метода split запишите каждое число этой строки в отдельный элемент массива.
+
+// let str = '1-2-3-4-5'
+// let arr = str.split('-')
+
+// console.log(arr)
+
+// Дана строка '12345'. С помощью метода split запишите каждый символ этой строки в отдельный элемент массива.
+
+// let str = '12345'
+// let arr = str.split('')
+// console.log(arr)
+
+// let arr = [1, 2, 3, 4, 5]
+// let str = arr.join('-')
+
+// console.log(str)
+
+// let arr = [1, 2, 3]
+// let sub = arr.push(4, 5, 6)
+
+// console.log(arr)
+
+// let arr = [1, 2, 3]
+// let sub = arr.unshift(4, 5, 6)
+
+// console.log(arr)
+
+// let arr = [1, 2, 3]
+// let sub = arr.pop()
+
+// console.log(sub)
+
+// let arr = [1, 2, 3, 4, 5]
+
+// let sub = arr.slice(0, 3)
+
+// console.log(sub)
+
+// let arr = [1, 2, 3, 4, 5]
+
+// let sub = arr.slice(3)
+
+// console.log(sub)
+
+// let arr = [1, 2, 3, 4, 5]
+
+// let sub = arr.splice(1, 2)
+
+// console.log(arr)
+
+
+
+// let arr = [1, 2, 3, 4, 5]
+
+// let sub = arr.splice(1, 0, 'a', 'b', 'c')
+
+// console.log(arr)
+
+// [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e']
+
+// let arr = [1, 2, 3, 4, 5]
+
+// arr.splice(1, 0, 'a', 'b')
+// arr.splice(6, 0, 'c')
+// arr.splice(8, 0, 'e')
+
+// console.log(arr)
+
+// let arr = [1, 2, 3, 4, 5]
+
+// console.log(arr.includes(3))
+// arr.indexOf(3)
+
+// console.log(arr.indexOf(3))
