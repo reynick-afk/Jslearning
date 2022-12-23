@@ -5470,3 +5470,319 @@
 // arr.indexOf(3)
 
 // console.log(arr.indexOf(3))
+
+
+// Преобразуйте первые 2 буквы строки в верхний регистр.
+
+// let str = 'london'
+
+// let result = str.slice(0, 2).toUpperCase() + str.slice(1)
+
+// console.log(result)
+
+
+// let str = 'London'
+
+// let result = str.slice(0, 1).toLowerCase() + str.slice(1)
+
+// console.log(result)
+
+// let str = 'word1 word2 word3';
+
+// // Разобьем строку в массив слов:
+// let words = str.split(' ');
+
+// for (let i = 0; i < words.length; i++) {
+//     // Увеличим регистр каждого слова:
+//     words[i] = words[i].slice(0, 1).toUpperCase() + words[i].slice(1);
+// }
+
+// // Сольем массив обратно в строку:
+// let result = words.join(' ');
+// console.log(result); // выведет 'Word1 Word2 Word3'
+
+
+// let str = 'word1 word2 word3'
+
+// let words = str.split(' ')
+
+// console.log(words)
+
+
+// for (let i = 0; i < words.length; i++) {
+//     words[i] = words[i].slice(0, 1).toUpperCase() + words[i].slice(1)
+// }
+
+// let result = words.join(' ')
+
+// console.log(result)
+
+
+// Преобразуйте строку 'var_test_text' в 'VarTestText'.
+
+// let str = 'var_test_text'
+
+// let word = str.split('_')
+
+// console.log(word)
+
+// for (let i = 0; i < word.length; i++) {
+//     word[i] = word[i].slice(0, 1).toLowerCase() + word[i].slice(1)
+// }
+
+// let result = word.join('')
+
+// console.log(result)
+
+// let str = '12345';
+
+// let result = str.split('').reverse().join('');
+
+// console.log(result); // выведет '54321'
+
+
+// Дана строка со словами. Напишите скрипт, который переставит слова в строке в обратном порядке.
+
+// let str = 'sosite moy xyu'
+
+// let result = str.split(' ').reverse().join(' ')
+
+// console.log(result)
+
+// let num = 12345
+// let numStr = String(num)
+// let arr = numStr.split('')
+
+// console.log(arr)
+
+// let sum = 0
+// for (let digit of arr) {
+//     sum += Number(digit)
+// }
+
+// console.log(sum)
+
+
+// let num = 12345;
+// let arr = String(num).split('');
+
+// console.log(arr)
+
+// let sum = 0;
+// for (let digit of arr) {
+//     sum += Number(digit);
+// }
+
+// console.log(sum);
+
+// let num = 12345;
+// let arr = String(num).split('');
+
+// let prod = 1;
+// for (let digit of arr) {
+// 	prod *= digit;
+// }
+
+// console.log(prod);
+
+
+/// FUNCTION 
+
+
+// Сделайте функцию, выводящую в консоль ваше имя.
+
+// function func() {
+//     console.log('Danial')
+// }
+
+// func()
+
+// function sum() {
+//     let sum = 0
+//     for (let i = 0; i < 100; i++) {
+//         sum += i
+//     }
+//     console.log(sum)
+// }
+// sum()
+
+// function func(num1, num2) {
+//     console.log(num1 + num2)
+// }
+
+// func(1, 2)
+
+// Сделайте функцию, которая параметрами принимает 3 
+// числа и выводит в консоль сумму этих чисел.
+
+// function func(num1, num2, num3) {
+//     console.log(num1 + num2 + num3)
+// }
+
+// func(1, 2, 3)
+
+// let param1 = 1;
+// let param2 = 2;
+// let param3 = 3;
+
+// function func(num1, num2, num3) {
+//     console.log(num1 + num2 + num3)
+// }
+
+// func(param1, param2, param3)
+
+// function func(num) {
+//     return num ** 2;
+// }
+
+// let res = func(3) + 1
+
+// console.log(res)
+
+// Сделайте функцию, 
+// которая параметром принимает число, 
+// а возвращает куб этого числа. 
+// С помощью этой функции найдите куб числа 3 и 
+// запишите его в переменную res.
+
+
+// function func(num) {
+//     return num ** 3
+// }
+
+// let res = func(3)
+
+// console.log(res)
+
+
+// Сделайте функцию, которая параметром принимает число, а возвращает квадратный корень из этого числа. 
+// С помощью этой функции найдите корень числа 3, затем найдите корень числа 4. 
+// Просуммируйте полученные результаты и выведите их в консоль.
+
+// function func(num) {
+//     return Math.sqrt(num)
+// }
+
+// let res = func(3) + func(4)
+
+// console.log(res)
+
+// function sqrt(num) {
+//     return Math.sqrt(num);
+// }
+
+// function round(num) {
+//     return num.toFixed(3);
+// }
+
+
+// let res = round(sqrt(2))
+// console.log(res)
+
+// function sqrt(num) {
+//     return Math.sqrt(num);
+// }
+
+// function sum(num1, num2, num3) {
+//     return num1 + num2 + num3;
+// }
+
+// function round(num) {
+//     return num.toFixed(3);
+// }
+
+// let res = round(sum(sqrt(2), sqrt(3), sqrt(4)))
+// console.log(res)
+
+// function func() {
+// 	let sum = 0;
+// 	let i = 1;
+
+// 	while (true) { // бесконечный цикл
+// 		sum += i;
+
+// 		if (sum >= 100) {
+// 			return i; // цикл крутится пока не выйдет тут
+// 		}
+
+// 		i++;
+// 	}
+// }
+
+// console.log( func() );
+
+// Напишите функцию, которая параметром будет принимать число и делить его на 2 столько раз, пока результат не станет меньше 10. 
+// Пусть функция возвращает количество итераций, которое потребовалось для достижения результата.
+
+// function func(num) {
+//     let i = 0
+//     for (; num > 10; i++) {
+//         num /= 2
+//     }
+//     return i;
+
+// }
+
+// console.log(func(420))
+
+// function func(num1, num2) {
+
+//     if (num1 > 0 && num2 > 0) {
+//         return num1 * num2
+//     } else {
+//         return num1 - num2
+//     }
+
+
+// }
+
+// console.log(func(2, 0));
+
+// Сделайте функцию, которая параметром будет принимать массив с числами, 
+// и проверять, что все элементы в этом массиве являются четными числами.
+
+
+// function func(arr) {
+//     let flag = false
+//     for (let elem of arr) {
+//         if (elem % 2 !== 0) {
+//             flag = true
+//         }
+//     }
+
+//     return flag
+// }
+
+// console.log(func([4, 4, 4, 4]))
+
+
+// Сделайте функцию, которая параметром будет принимать число и проверять, что все цифры это числа являются нечетными.
+
+// function func(num) {
+//     let numStr = num.toString().split('')
+//     let flag = true
+
+//     for (let elem of numStr) {
+//         if (Number(elem) % 2 == 0) {
+//             flag = false
+//         }
+//     }
+
+//     return flag
+
+// }
+
+// console.log(func(3321))
+
+// Сделайте функцию, которая параметром будет принимать массив и проверять, есть ли в этом массиве два одинаковых элемента подряд.
+
+// function func(arr) {
+//     for (let i = 0; i < arr.length - 1; i++) {
+//         if (arr[i] == arr[i + 1]) {
+//             return true
+//         }
+//     }
+//     return false
+// }
+
+// console.log(func([1, 1, 4, 4]))
