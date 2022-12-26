@@ -6356,3 +6356,180 @@
 // let arr = [1, 2, 3, 4, 5]
 
 // console.log(obj.func3(arr))
+
+// Сделайте функцию test, параметрами принимающую 3 функции. Передайте в нее первым параметром функцию, 
+// возвращающую 1, вторым - функцию, возвращающую 2, третьим - функцию, возвращающую 3. 
+// Выведите в консоль сумму результатов функций.
+
+test(
+    function() { return 1; },
+    function() { return 2; },
+    function() { return 3; }
+);
+
+function test(func1, func2, func3) {
+    let res = func1() + func2() + func3()
+    console.log(res)
+}
+
+
+// Сделайте функцию test, параметрами принимающую 3 функции и возвращающую сумму результатов переданных функций.
+
+// function get1() {
+//     return 1
+// }
+
+// function get2() {
+//     return 2
+// }
+
+// function get3() {
+//     return 3
+// }
+
+
+// function test(func1, func2, func3) {
+//     console.log(func1() + func2() + func3())
+// }
+
+// test(func1, func2, func3);
+
+
+// Сделайте 3 функции, объявив их как Function Declaration и дав им имена func1, func2 и func3. 
+// Пусть первая функция возвращает 1, вторая - 2, а третья - 3. 
+// Передайте эти функции параметром в функцию test из предыдущей задачи.
+
+// let func1 = function() {
+//     return 1
+// }
+
+// let func2 = function() {
+//     return 2
+// }
+
+// let func3 = function() {
+//     return 3
+// }
+
+// function test(func1, func2, func3) {
+//     console.log(func1() + func2() + func3())
+// }
+
+// test(func1, func2, func3);
+
+
+
+
+
+
+// test(function(num) {
+//     return num * num;
+// });
+
+// function test(func) {
+//     console.log(func(3));
+// }
+
+// function func(num) {
+//     return num * num * num
+// }
+
+// function SumFunc(num1, num2) {
+//     let resut = 0
+//     let numFirst = num1 * num1 * num1
+//     let numSec = num2 * num2 * num2
+//     resut += numFirst + numSec
+//     return resut
+// }
+
+// console.log(SumFunc(1, 2))
+
+// Скопируйте код моей функции test. 
+// Вызовите эту функцию, передав ей параметром анонимную функцию, которая параметром 
+// будет принимать число и возвращать его куб.
+
+// Переделайте передаваемую функцию на Function Expression с тем же именем func.
+
+// Пусть передаваемая функция теперь принимает два параметра и возвращает их сумму. 
+// При вызове передаваемой функции внутри test передайте в передаваемую функцию число 2 и число 3. 
+// Выведите алертом результат.
+
+// function test(arr, func) {
+//     for (let i = 0; i < arr.length; i++) {
+//         arr[i] = func(arr[i])
+//     }
+//     return arr
+// }
+
+// let result = test([1, 5, 3], function(num) {
+//     return num * num // * num
+// })
+
+// console.log(result)
+
+// Сделайте функцию func, которая параметрами будет принимать два числа, а возвращать сумму квадрата первого числа с кубом второго числа. 
+// Сделайте для этого вспомогательную функцию square, возводящую число в квадрат, и вспомогательную функцию cube, возводящую число в куб.
+
+// function sumSquareCube(num1, num2) {
+//     let result = 0
+
+//     function square(num1) {
+//         return num1 * num1
+//     }
+
+//     function cube(num2) {
+//         return num2 * num2 * num2
+//     }
+
+//     result += square(num1) + cube(num2)
+//     return result
+// }
+
+// console.log(sumSquareCube(4, 2))
+// let num = 1;
+
+// function test() {
+//     // let num = 1;
+
+//     function func() {
+//         console.log(num);
+//     }
+
+//     func();
+// }
+
+// test();
+
+
+// function test(num1, num2) {
+// 	function func() {
+// 		console.log(num1 + num2);
+// 	}
+
+// 	func();
+// }
+
+// test(1, 2);
+
+
+// function test(num) {
+// 	function func(localNum) {
+// 		console.log(localNum);
+// 	}
+
+// 	func(num);
+// }
+
+// test(1);
+
+
+// function test(num) {
+//     function func(localNum) {
+//         num = 2;
+//     }
+
+//     func(num);
+//     console.log(num);
+// }
+
+// test(1);
