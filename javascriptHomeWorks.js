@@ -5786,3 +5786,573 @@
 // }
 
 // console.log(func([1, 1, 4, 4]))
+
+// function func(arr) {
+//     let previous = null
+
+//     for (let i = 0; i < arr.length; i++) {
+//         let current = arr[i]
+
+//         if (current === previous) {
+//             return true
+//         }
+
+//         previous = current
+//     }
+
+//     return false
+// }
+
+// console.log(func([2, 5, 3, 3]))
+
+// function func(a, b) {
+//     return a > b;
+// }
+
+// func(3, 2);
+
+// function func(a, b) {
+
+//     return a == b
+
+// }
+
+// console.log(func(1, 1))
+
+// function func(a, b) {
+
+//     return a != b
+
+// }
+
+// console.log(func(2, 2))
+
+// function func(a, b) {
+
+//     return a + b >= 10;
+// }
+
+// console.log(func(6, 4))
+
+// function func(num) {
+
+//     return num >= 0
+
+
+// }
+
+// console.log(func(-2))
+
+
+// function calc(arr1, arr2) {
+//     let res1 = 0;
+
+//     for (let elem of arr1) {
+//         res1 += elem;
+//     }
+
+//     let res2 = 0;
+
+//     for (let elem of arr2) {
+//         res2 += elem;
+//     }
+
+//     return res1 / res2;
+// }
+
+// console.log(calc([2, 2, 3, 4], [2, 4, 5, 6])) //  11 and 17
+
+// function getSum(arr) {
+//     let res = 0;
+
+//     for (let elem of arr) {
+//         res += elem;
+//     }
+
+//     return res;
+// }
+// console.log(getSum([1, 2, 5, 4, 5, 5]))
+
+// function func1() {
+//     return 3
+// }
+
+// function func2() {
+//     return 5
+// }
+
+// console.log(func1() + func2());
+
+
+// function sum(arr) {
+//     let res = 0;
+
+//     for (let elem of arr) {
+//         res += elem;
+//     }
+//     return res;
+// }
+
+// console.log(sum([1, 2, 3, 4, 5]));
+
+// let arr = [1, 2, 3, 4, 5];
+
+// function func(arr) {
+//     let res = 0;
+
+//     for (let elem of arr) {
+//         res += elem;
+//     }
+//     return res
+
+// }
+
+// console.log(func(arr))
+
+// function func1() {
+//     return 3;
+// }
+
+// function func2() {
+//     return 5;
+// }
+
+// console.log(func1() + func2());
+
+// let arr = [1, 2, 3, 4, 5]
+
+
+// function sum(arr) {
+//     let sum = 0
+
+//     for (let elem of arr) {
+//         sum += elem
+//     }
+
+//     return sum
+// }
+
+// console.log(sum(arr))
+
+// let res = [1, 2, 3, 4, 5];
+
+
+// function sum(arr) {
+//     let sum = 0;
+
+//     for (let elem of arr) {
+//         sum += elem;
+//     }
+//     return sum
+// }
+
+// console.log(sum(res))
+
+// function add(num) {
+//     if (num <= 9) {
+//         return num + '0';
+//     } else {
+//         return num
+//     }
+// }
+
+// console.log(add(2))
+
+// let arr = [1, 2, 3, 4, 5];
+// let sum = getSum(arr);
+// console.log(sum);
+
+// function getSum(arr) {
+//     let res = 0;
+
+//     for (let elem of arr) {
+//         res += elem;
+//     }
+
+//     return res;
+// }
+
+
+// let num = 12345;
+// let res = getDigitsSum(num);
+// console.log(res);
+
+// function getDigitsSum(num) {
+//     let arr = num.toString().split('');
+//     let sum = 0;
+
+//     for (let elem of arr) {
+//         sum += Number(elem);
+//     }
+
+//     return sum;
+// }
+
+// console.log(isPrime(13)); // должен вывести true
+
+// function isPrime(num) {
+//     for (let i = 2; i < num; i++) {
+//         if (num % i !== 0) {
+//             return true;
+//         } else {
+//             return false;
+//         }
+//     }
+// }
+
+// Сделайте функцию, которая параметром будет принимать массив и возвращать сумму его элементов.
+
+// let arr = [1, 2, 3, 4, 5]
+
+// function sumArr(arr) {
+//     let sum = 0
+//     for (let elem of arr) {
+//         sum += elem
+//     }
+//     return sum
+// }
+
+// console.log(sumArr(arr))
+
+// Сделайте функцию, которая параметром будет принимать число и возвращать массив его делителей.
+
+// function getDivisors(n) {
+//     let divisors = []
+//     for (let i = 1; i <= n; i++) {
+//         if (n % i === 0) {
+//             divisors.push(i);
+//         }
+//     }
+//     return divisors;
+// }
+
+// const divisors = getDivisors(10);
+// console.log(divisors);
+
+
+// Сделайте функцию, которая параметром будет принимать строку и возвращать массив ее символов.
+
+// let str = 'abcde'
+
+// function getElemetString(str) {
+//     return str.split('')
+
+// }
+
+// console.log(getElemetString(str))
+
+
+// Сделайте функцию, которая параметром будет принимать строку и переворачивать ее символы в обратном порядке.
+
+// let str = 'abcde'
+
+// function strReverse(str) {
+//     return str.split('').reverse().join('')
+// }
+
+// console.log(strReverse(str))
+
+// Сделайте функцию, которая параметром будет принимать строку и делать заглавной первую букву этой строки.
+
+// let str = 'abve'
+
+// function firstUpperCase(str) {
+//     return str.slice(0, 1).toUpperCase() + str.slice(1)
+// }
+
+// console.log(firstUpperCase(str))
+
+// Сделайте функцию, которая параметром будет принимать строку и делать заглавной первую букву каждого слова этой строки.
+
+// let str = 'sosi mou xyu'
+
+// function firstWordUpperCase(str) {
+//     let arr = str.split(' ')
+//     for (let i = 0; i < arr.length; i++) {
+//         arr[i] = arr[i].slice(0, 1).toUpperCase() + arr[i].slice(1);
+//     }
+//     let result = arr.join(' ');
+//     return result
+// }
+
+// console.log(firstWordUpperCase(str))
+
+// Сделайте функцию, заполняюю массив целыми числами от 1 до заданного.
+
+// function createArray(n) {
+//     let arr = []
+//     for (let i = 1; i <= n; i++) {
+//         arr.push(i)
+//     }
+//     return arr
+// }
+
+// let myArray = createArray(6)
+
+// console.log(myArray)
+
+// Сделайте функцию, которая будет возвращать случайный элемент из массива.
+
+// let arr = [1, 2, 4, 5, 6, 5, 6, 7]
+
+// function randomOfArray(arr) {
+//     let random = Math.floor(Math.random() * arr.length)
+//         // console.log(Math.floor(Math.random() * arr.length)) ?
+//     return arr[random]
+// }
+
+// let myArr = randomOfArray(arr)
+// console.log(myArr)
+
+
+// Сделайте функцию, которая параметром будет принимать число и проверять, простое оно или нет.
+
+// function primeNumb(num) {
+//     if (num > 1) {
+//         for (let i = 2; i < num; i++) {
+//             if (num % i == 0) {
+//                 return "Составное число"
+//             }
+//         }
+//         return "Простое число"
+//     } else {
+//         return "Число должно быть больше 1"
+//     }
+// }
+
+// console.log(primeNumb(4));
+
+
+// Сделайте функцию, которая будет проверять пару чисел на дружественность.
+// Дружественные числа - два числа, для которых сумма всех собственных
+// делителей первого числа равна второму числу и наоборот,
+// сумма всех собственных делителей второго числа равна первому числу. /// Zalupa
+
+// Найдите все счастливые билеты. 
+// Счастливый билет - это билет, в котором сумма первых трех цифр его номера равна сумме 
+// вторых трех цифр его номера.
+
+
+
+// const tickets = [111, 233, 234444, 4234, 111, 123, 123, 111111, 111111]
+
+// function isHappyTicket(ticketNumber) {
+
+//     const digits = ticketNumber.toString().split('')
+
+//     if (digits.length !== 6) {
+//         return false
+//     }
+
+//     const sum1 = digits[0] + digits[1] + digits[2]
+//     const sum2 = digits[3] + digits[4] + digits[5]
+
+//     return sum1 === sum2
+
+// }
+
+// const happyTickets = tickets.filter(isHappyTicket)
+// console.log(happyTickets)
+
+
+// Сделайте функцию, которая параметром будет принимать два числа и возвращать массив их общих делителей.
+
+// function func(num1, num2) {
+//     let min = Math.min(num1, num2)
+//     let arr = []
+
+//     for (let i = 0; i <= min; i++) {
+//         if (num1 % i === 0 && num2 % i === 0) {
+//             arr.push(i)
+//         }
+//     }
+//     return arr
+// }
+
+// console.log(func(12, 18))
+
+
+// Сделайте функцию, которая будет принимать строку на русском языке, а возвращать ее транслит.
+
+// Сделайте функцию, которая будет принимать число, а возвращать это число прописью. 
+// Пусть функция работает с числами до 999. Смотрите пример:
+
+// func(123); // выведет 'сто двадцать три'
+
+
+// function numberToText(num) {
+
+//     let ones = ['', 'один', 'два', 'три', 'четыре', 'пять', 'шесть', 'семь', 'восемь', 'девять']
+//     let tens = ['', 'десять', 'двадцать', 'тридцать', 'сорок', 'пятьдесят', 'шестьдесят', 'семьдесят', 'восемьдесят', 'девяносто']
+//     let teens = ['', 'одиннадцать', 'двенадцать', 'тринадцать', 'четырнадцать', 'пятнадцать', 'шестнадцать', 'семнадцать', 'восемнадцать', 'девятнадцать']
+//     let hundreds = ['', 'сто', 'двести', 'триста', 'четыреста', 'пятьсот', 'шестьсот', 'семьсот', 'восемьсот', 'девятьсот']
+
+
+//     let result = ''
+
+//     if (num > 99) {
+//         result += hundreds[Math.floor(num / 100)] + ' '
+//         num = num % 100;
+//     }
+
+//     if (num > 10 && num <= 19) {
+//         result += teens[Math.floor(num / 11)] + ' '
+//         num = num % 10
+//     }
+
+//     if (num > 9) {
+//         result += tens[Math.floor(num / 10)] + ' '
+//         num = num % 10
+//     }
+
+
+//     result += ones[num]
+
+
+//     return result
+// }
+
+// console.log(numberToText(112))
+
+
+
+// const hundredths = ['сто', 'двести', 'триста', 'четыреста', 'пятьсот', 'шестьсот', 'семьсот', 'восемьсот', 'девятьсот']
+// const dozens = ['десять', 'двадцать', 'тридцать', 'сорок', 'пятьдесят', 'шестьдесят', 'семьдесят', 'восемьдесят', 'девяносто']
+// const units = ['один', 'два', 'три', 'четыре', 'пять', 'шесть', 'семь', 'восемь', 'девять']
+// const teens = ['одиннадцать', 'двенадцать', 'тринадцать', 'четырнадцать', 'пятнадцать', 'шестьнадцать', 'семьнадцать', 'восемьнадцать', 'девятнадцать']
+
+// function convert(number) {
+//     let words = []
+//     let is_teens_used = false
+
+//     const hundredth = Math.floor((number / 100) % 10)
+//     const dozen = Math.floor((number / 10) % 10)
+//     const unit = Math.floor((number / 1) % 10)
+
+//     if (hundredth) {
+//         words.push(hundredths[hundredth - 1])
+//     }
+
+//     if (dozen) {
+//         if (dozen > 1) {
+//             words.push(dozens[dozen - 1])
+//         } else {
+//             words.push(teens[unit - 1])
+//             is_teens_used = true
+//         }
+//     }
+
+//     if (!is_teens_used) {
+//         words.push(units[unit - 1])
+//     }
+
+//     return words.join(' ')
+// }
+
+// const word_number = convert(112)
+// console.log(word_number)
+
+
+// function func(obj) {
+//     obj.a = '!';
+// }
+
+// let obj = { a: 1, b: 2, c: 3 };
+// func(obj);
+// console.log(obj);
+
+// function func(arr) {
+// 	arr.splice(1, 1);
+// }
+
+// let arr = [1, 2, 3];
+// func(arr);
+// console.log(arr);
+
+// function func(arr) {
+//     let newArr = arr;
+//     newArr[0] = '!';
+// }
+
+// let arr = [1, 2, 3];
+// func(arr);
+// console.log(arr);
+
+
+// Сделайте функцию func, которая будет возвращать через return какую-либо строку.
+
+
+// let func1 = function() {
+//     return 1
+// }
+
+// let func2 = function() {
+//     return 2
+// }
+
+// let result = func1() + func2()
+// console.log(result)
+
+
+
+// Сделайте массив arr с тремя функциями. 
+// Пусть первая возвращает через return число 1, вторая - число 2, третья - число 3.
+
+// let arr = [
+//     function() { return 1 },
+//     function() { return 2 },
+//     function() { return 3 },
+// ]
+
+// let sum = arr[0]() + arr[1]() + arr[2]()
+
+// console.log(sum)
+
+// for (let func of arr) {
+//     console.log(func())
+// }
+
+// let obj = {
+// 	func1: function() {console.log(1)},
+// 	func2: function() {console.log(2)},
+// 	func3: function() {console.log(3)},
+// };
+// Воспользуемся нашим объектом:
+
+// let obj = {
+// 	func1: function() {console.log(1)},
+// 	func2: function() {console.log(2)},
+// 	func3: function() {console.log(3)},
+// };
+
+// obj.func1(); // выведет 1
+
+
+
+// let obj = {
+//     func1: function() { return 1 },
+//     func2: function() { return 2 },
+//     func3: function() { return 3 }
+// }
+
+// // let sum = obj.func1() + obj.func2() + obj.func3()
+// // console.log(sum)
+
+// for (let func in obj) {
+//     let funct = obj[func]
+//     console.log(funct())
+// }
+
+
+// Сделайте объект с тремя функциями, каждая из которых будет принимать параметром массив с числами. 
+// Сделайте так, чтобы первая функция возвращала сумму элементов массива, вторая функция - сумму квадратов, а третья - сумму кубов.
+
+// let obj = {
+//     func1: function(arr) { let result = 0; for (let elem of arr) { result += elem } return result },
+//     func2: function(sumSquare) { let result = 0; for (let elem of arr) { result += elem * elem } return result },
+//     func3: function(sumCube) { let result = 0; for (let elem of arr) { result += elem * elem * elem } return result }
+// }
+
+// let arr = [1, 2, 3, 4, 5]
+
+// console.log(obj.func3(arr))
