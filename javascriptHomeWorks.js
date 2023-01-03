@@ -6361,16 +6361,16 @@
 // возвращающую 1, вторым - функцию, возвращающую 2, третьим - функцию, возвращающую 3. 
 // Выведите в консоль сумму результатов функций.
 
-test(
-    function() { return 1; },
-    function() { return 2; },
-    function() { return 3; }
-);
+// test(
+//     function() { return 1; },
+//     function() { return 2; },
+//     function() { return 3; }
+// );
 
-function test(func1, func2, func3) {
-    let res = func1() + func2() + func3()
-    console.log(res)
-}
+// function test(func1, func2, func3) {
+//     let res = func1() + func2() + func3()
+//     console.log(res)
+// }
 
 
 // Сделайте функцию test, параметрами принимающую 3 функции и возвращающую сумму результатов переданных функций.
@@ -6533,3 +6533,92 @@ function test(func1, func2, func3) {
 // }
 
 // test(1);
+
+
+/// function callback 
+
+
+// function each(arr, callback) {
+//     let result = [];
+
+//     for (let elem of arr) {
+//         result.push(callback(elem)); // вызываем функцию-коллбэк
+//     }
+
+//     return result;
+// }
+
+// let result = each([1, 2, 3, 4, 5], function(num) {
+//     return num ** 2;
+// });
+
+// console.log(result);
+
+
+// Дан массив с числами. С помощью созданной нами функции each увеличьте каждый элемент в два раза.
+
+
+// Дан массив со строками. С помощью созданной нами функции each переверните символы каждой строки в обратном порядке.
+
+
+// function each(arr, callback) {
+//     let result = [];
+
+//     for (let elem of arr) {
+//         result.push(callback(elem)); // вызываем функцию-коллбэк
+//     }
+
+//     return result;
+// }
+
+// let result = each(['zalupa', 'suka'], function(str) {
+//     let strSec = str.split('').reverse()
+//     let strS = strSec.join('')
+//     return strS
+// })
+
+// console.log(result)
+
+// Дан массив со строками. С помощью созданной нами функции each сделайте заглавным первый символ каждой строки.
+
+// function each(arr, callback) {
+//     let result = [];
+
+//     for (let elem of arr) {
+//         result.push(callback(elem)); // вызываем функцию-коллбэк
+//     }
+
+//     return result;
+// }
+
+// function capitalizeFirstLetter(str) {
+//     return str.slice(0, 1).toUpperCase() + str.slice(1);
+// }
+
+
+// let result = each(['zalupa'], capitalizeFirstLetter);
+
+// console.log(result)
+
+
+
+////////////////////
+
+
+// function each(arr, callback) {
+//     let result = [];
+
+//     for (let elem of arr) {
+//         result.push(callback(elem)); // вызываем функцию-коллбэк
+//     }
+
+//     return result;
+// }
+
+// function cube(num) {
+//     return num ** 3;
+// }
+
+
+// let result = each([1, 23, 4, 5], cube)
+// console.log(result)
