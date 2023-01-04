@@ -6622,3 +6622,394 @@
 
 // let result = each([1, 23, 4, 5], cube)
 // console.log(result)
+
+
+
+// let func2 = (num1, num2) => {
+//     let result = num1 * num2;
+//     return result;
+// }
+
+// console.log(func2(4, 4))
+
+
+// let result = every([1, 2, 3, 4, 5], function(elem) {
+//     if (elem > 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// });
+
+
+// // let result = every([1, 2, 3, 4, 5], elem => elem > 0)
+
+// function each(arr, callback) {
+//     let result = [];
+
+//     for (let elem of arr) {
+//         result.push(callback(elem)); // вызываем функцию-коллбэк
+//     }
+
+//     return result;
+// }
+
+// let result = every([1, 2, 3, 4, 5], elem => elem % 2 == 0);
+
+// console.log(result)
+
+// let result = every([1, 2, 3, 4, 5], (elem, index) => elem * index < 10)
+
+// console.log(result)
+
+
+
+
+// let arr = [
+//     [1, 2, 50],
+//     [4, 5, 6],
+//     [7, 8, 9]
+// ];
+
+// let result = each(arr, (elem, index) => elem * index > 10)
+
+
+// console.log(result)
+
+// Работа с рекурсией в JavaScript
+
+// let i = 1;
+
+// function func() {
+//     console.log(i);
+//     i++;
+
+//     if (i <= 10) {
+//         func(); // здесь функция вызывает сама себя
+//     }
+// }
+// func();
+
+
+// function func(arr) {
+//     console.log(arr.shift(), arr);
+
+//     if (arr.length != 0) {
+//         func(arr);
+//     }
+// }
+
+// func([1, 2, 3]);
+
+
+// function func(arr) {
+//     console.log(arr.shift(), arr)
+
+//     if (arr.length != 0) {
+//         func(arr)
+//     }
+// }
+
+// let arr = [1, 2, 3, 4, 5];
+
+// func(arr)
+
+
+// function getSum(arr) {
+// 	let sum = arr.shift();
+
+// 	if (arr.length !== 0) {
+// 		sum += getSum(arr);
+// 	}
+
+// 	return sum;
+// }
+
+// console.log(getSum([1, 2, 3]));
+
+
+
+
+
+
+// function getSum(arr) {
+//     let sum = arr.shift()
+
+//     if (arr.length !== 0) {
+//         sum += getSum(arr)
+//     }
+//     return sum
+// }
+
+// let arr = [1, 2, 3, 4, 5];
+
+// console.log(getSum(arr))
+
+
+// Рекурсия и многомерные структуры в JavaScript
+
+
+
+
+
+// function func(arr) {
+//     for (let elem of arr) {
+//         if (typeof elem == 'object') {
+//             // элемент - массив
+//         } else {
+//             // элемент - примитив
+//             console.log(elem);
+//         }
+//     }
+// }
+
+// func([1, [2, 7, 8],
+//     [3, 4, [5, [6, 7]]]
+// ]);
+
+
+// function func(arr) {
+//     for (let elem of arr) {
+//         if (typeof elem == 'object') {
+//             func(elem);
+//         } else {
+//             console.log(elem);
+//         }
+//     }
+// }
+
+// func([1, [2, 7, 8],
+//     [3, 4, [5, [6, 7]]]
+// ]);
+
+
+// function printPrimitiveValues(obj) {
+//     for (let key in obj) {
+//         if (obj.hasOwnProperty(key)) {
+//             let value = obj[key];
+//             if (typeof value === 'object') {
+//                 printPrimitiveValues(value);
+//             } else {
+//                 console.log(value);
+//             }
+//         }
+//     }
+// }
+
+// const obj = { a: 1, b: { c: 2, d: 3, e: 4 }, f: { g: 5, j: 6, k: { l: 7, m: { n: 8, o: 9 } } } }
+
+// printPrimitiveValues(obj)
+
+
+
+// Дан многомерный массив произвольного уровня вложенности, например, такой:
+
+// [1, [2, 7, 8], [3, 4, [5, [6, 7]]]]
+// Напишите код, который развернет наш многомерный массив в одномерный. Для приведенного выше массива это будет выглядеть вот так:
+
+// [1, 2, 7, 8, 3, 4, 5, 6, 7]
+
+
+// let arr = [1, [2, 7, 8],
+//     [3, 4, [5, [6, 7]]]
+// ]
+
+// function flattenArray(arr, result = []) {
+//     for (const value of arr) {
+//         if (Array.isArray(value)) {
+
+//             flattenArray(value, result)
+//         } else {
+//             result.push(value)
+//         }
+//     }
+//     return result
+// }
+
+// let result = flattenArray(arr)
+
+// console.log(result)
+
+// function func(arr) {
+//     let sum = 0;
+
+//     for (let elem of arr) {
+//         if (typeof elem == 'object') {
+//             sum += func(elem);
+//         } else {
+//             sum += elem;
+//         }
+//     }
+
+//     return sum;
+// }
+
+// console.log(func([1, [2, 7, 8],
+//     [3, 4, [5, [6, 7]]]
+// ]));
+
+
+
+
+
+
+// function sumObjectValues(obj) {
+//     let sum = 0
+
+//     for (let key in obj) {
+//         if (obj.hasOwnProperty(key)) {
+//             let value = obj[key]
+//             if (typeof value === 'object') {
+
+//                 sum += sumObjectValues(value)
+//             } else if (typeof value === 'number') {
+//                 sum += value
+
+//             }
+//         }
+//     }
+//     return sum
+// }
+
+// const obj = { a: 1, b: { c: 2, d: 3, e: 4 }, f: { g: 5, j: 6, k: { l: 7, m: { n: 8, o: 9 } } } }
+
+// console.log(sumObjectValues(obj))
+
+
+// Дан многомерный массив произвольного уровня вложенности, содержащий внутри себя строки, например, такой:
+
+// ['a', ['b', 'c', 'd'], ['e', 'f', ['g', ['j', 'k']]]]
+// С помощью рекурсии слейте элементы этого массива в одну строку:
+
+// 'abcdefgjk'
+
+// function objectInString(arr) {
+//     let result = ''
+//     for (const value of arr) {
+//         if (Array.isArray(value)) {
+//             result += objectInString(value)
+//         } else if (typeof value === 'string') {
+//             result += value
+//         }
+
+//     }
+//     return result
+// }
+
+// const arr = ['a', ['b', 'c', 'd'],
+//     ['e', 'f', ['g', ['j', 'k']]]
+// ]
+// const result = objectInString(arr)
+
+// console.log(result) // 'abcdefgjk'
+
+
+// function func(arr) {
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (typeof arr[i] == 'object') {
+// 			arr[i] = func(arr[i]);
+// 		} else {
+// 			arr[i] = arr[i] + '!';
+// 		}
+// 	}
+
+// 	return arr;
+// }
+
+// console.log(func([1, [2, 7, 8], [3, 4, [5, 6]]]));
+
+
+// const arr = [1, [2, 7, 8],
+//     [3, 4],
+//     [5, [6, 7]]
+// ]
+
+// function getElementsSquare(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (typeof arr[i] == 'object') {
+//             arr[i] = getElementsSquare(arr[i])
+//         } else {
+//             arr[i] = arr[i] * arr[i]
+//         }
+//     }
+//     return arr;
+// }
+
+// const result = getElementsSquare(arr)
+
+// console.log(result)
+
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let result = arr.map(function(elem) {
+// 	console.log(elem); // последовательно выведет 1, 2, 3, 4, 5
+// });
+
+// Дан массив с числами.
+// Используя метод map извлеките из каждого элемента массива квадратный корень и запишите результат в новый массив.
+
+
+// let arr = [1, 2, 3, 4, 5]
+
+// let result = arr.map(function(elem) {
+
+//     return Math.sqrt(elem);
+
+// })
+
+// console.log(result)
+
+// Дан массив со строками. Используя метод map в конец значению каждого элемента массива добавьте символ '!'.
+
+// let arr = ['123', '123', 'asdw']
+
+// let result = arr.map(function(elem) {
+
+//     return elem + '!';
+
+// })
+
+// console.log(result)
+
+// Дан массив со строками. Используя метод map переверните символы каждой строки в обратном порядке.
+// let arr = ['123', '123', 'asdw']
+
+// const result = arr.map(str => str.split('').reverse().join(''))
+
+// console.log(result)
+
+// let arr = ['123', '456', '789'];
+// Используя метод map преобразуйте этот массив в следующий:
+
+// let arr = [
+// 	[1, 2, 3],
+// 	[4, 5, 6],
+// 	[7, 8, 9]
+// ];
+
+
+// let arr = ['123', '456', '789'];
+// let result = arr.map(str => str.split('').map(st => parseInt(st, 10)));
+
+// console.log(result)
+
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+
+// let result = arr.map(function(elem, index) {
+//     return elem + index;
+// });
+
+// console.log(result); // выведет ['a0', 'b1', 'c2', 'd3', 'e4']
+
+// Дан массив с числами.
+// Используя метод map запишите в каждый элемент массива значение этого элемента,
+// умноженное на его порядковый номер в массиве.
+
+
+// let arr = [1, 2, 4, 5, 6, 7, 4]
+
+// let result = arr.map((elem, index) => elem * index)
+
+// console.log(result)
