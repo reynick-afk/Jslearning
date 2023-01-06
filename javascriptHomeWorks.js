@@ -7013,3 +7013,640 @@
 // let result = arr.map((elem, index) => elem * index)
 
 // console.log(result)
+
+
+// Метод forEach для перебора массива в JavaScript
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+
+// arr.forEach(function(elem, index) {
+//     document.write(index + '. ' + elem + '<br>');
+// });
+
+// let arr = [1, 2, 3, 4, 5];
+// let sum = 0;
+
+// arr.forEach(function(elem, index) {
+//     sum += elem;
+//     console.log(index)
+// });
+
+// console.log(sum);
+
+
+// Дан массив с числами. Используя метод forEach найдите сумму квадратов элементов этого массива.
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let sum = 0
+
+// arr.forEach(function(elem) {
+//     sum += elem * elem
+// })
+
+// console.log(sum)
+
+
+// Метод filter для фильтрации массива в JavaScript
+
+// let arr = [1, 2, 3, 4, 5]
+
+// // let result = arr.filter(function(elem) {
+// //     if (elem % 2 != 0) {
+// //         return true;
+// //     } else {
+// //         return false;
+// //     }
+// // });
+
+
+// let result = arr.filter((elem) => elem % 2 == 0);
+// console.log(result); // выведет [2, 4]
+
+
+// Дан массив с числами. Оставьте в нем только положительные числа.
+
+// let arr = [1, 2, 3, 4, 5, -4, -3, -2]
+
+// let result = arr.filter(elem => elem > 0)
+
+// console.log(result)
+
+// Дан массив с числами. Оставьте в нем только отрицательные числа.
+
+
+// let arr = [1, 2, 3, 4, 5, -4, -3, -2]
+
+// let result = arr.filter(elem => elem < 0)
+
+// console.log(result)
+
+// Дан массив с числами. Оставьте в нем только числа, которые больше нуля, но меньше 10.
+
+// let arr = [1, 2, 3, 4, 5, -4, -3, -2, 12]
+
+// console.log(arr.filter(elem => elem > 0 && elem < 10))
+
+
+// Дан массив со строками. Оставьте в нем только те строки, длина которых больше 5-ти символов.
+
+// let arr = ['qwert', 'qwertyu', 'qwerty']
+
+// let result = arr.filter(elem => elem.length > 5)
+
+// console.log(result)
+
+// Дан массив с числами. Оставьте в нем только те числа, произведение которых на их порядковый номер меньше 30.
+// let arr = [1, 2, 3, 4, 5, -4, -3, -2, 12]
+
+// let result = arr.filter((elem, index) => elem * index < 30)
+
+// console.log(result)
+
+
+// Дан массив, в нем могут быть обычные элементы и подмассивы, например [1, 2, [3, 4], 5, [6, 7]]. Оставьте в нем только обычные элементы.
+
+// function isNotArray(elem) {
+//     return !Array.isArray(elem)
+// }
+
+// let arr = [1, 2, [3, 4], 5, [6, 7]]
+// let filteredArray = arr.filter(isNotArray)
+
+// console.log(filteredArray)
+
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let filtered = arr.filter(elem => elem % 2 == 0);
+// console.log( filtered.length ); // выведет 2
+
+
+// let arr = [1, 2, 3, 4, 5];
+// console.log( arr.filter(elem => elem % 2 == 0).length );
+
+// Дан массив с числами. Посчитайте количество отрицательных чисел в этом массиве.
+
+// let arr = [1, 2, 4, 5, 6, -2, -3, 5, -5]
+
+// let filtered = arr.filter(elem => elem < 0).length
+
+// console.log(filtered)
+
+// Метод every с массивом
+
+// let arr = [2, 4, 6, 8];
+
+// let result = arr.every(elem => elem % 2 == 0);
+// console.log(result);
+
+// Дан массив с числами. Проверьте то, что все элементы в массиве больше нуля.
+
+// let arr = [2, 4, 6, 8, 0]
+
+// let result = arr.every(elem => elem > 0)
+// console.log(result)
+
+// Дан массив с числами. Проверьте то, что для всех элементов произведение их значений на их порядковый номер меньше 30.
+
+// let arr = [2, 4, 6, 8, 23]
+
+// let result = arr.every((elem, index) => elem * index < 30)
+
+// console.log(result)
+
+// Метод some для проверки массива в JavaScript
+// let arr = [2, 4, 6, 8];
+
+// let result = arr.some(elem => elem % 2 == 0);
+// console.log(result);
+
+// Дан массив с числами. Проверьте то, что в массиве есть хотя бы одно число больше нуля.
+
+// let arr = [2, 4, 6, 8];
+
+// console.log(arr.some(elem => elem > 0))
+
+
+// Дан массив с числами. Проверьте то, что хотя бы для одного элемента произведение его значения на порядковый номер больше 30.
+
+// let arr = [2, 4, 6, 8, 23]
+
+// let result = arr.some((elem, index) => elem * index > 30)
+
+// console.log(result)
+
+// Оператор spread в JavaScript
+
+// function func(num1, num2, num3) {
+//     return num1 + num2 + num3;
+// }
+
+// // let arr = [1, 2, 3];
+
+// // let arr = [1, 2, 3];
+// // func(arr);
+
+// // let arr = [1, 2, 3];
+// // func(arr[0], arr[1], arr[2]);
+
+
+// let arr = [1, 2, 3];
+// console.log(func(...arr));
+
+
+// function func(num1, num2, num3, num4, num5) {
+//     return num1 + num2 + num3 + num4 + num5;
+// }
+
+// let arr = [1, 2, 3, 4, 5];
+
+// console.log(func(...arr))
+
+
+// function func(num1, num2, num3, num4, num5) {
+//     return num1 + num2 + num3 + num4 + num5;
+// }
+
+// // // console.log(func(...[1, 2], ...[3, 4, 5]))
+// // console.log(func(1, 2, ...[3, 4, 5]))
+// console.log(func(1, ...[2, 3, 4], 5))
+
+
+// function func(n1, n2, n3, n4, n5, n6, n7, n8) {
+//     return (n1 + n2 + n3 + n4) * (n5 + n6 + n7 + n8);
+// }
+
+// console.log(func(1, ...[2, 3, 4], 5, ...[6], ...[7, 8]));
+
+
+// let arr = [1, 2, 3, 4, 5, 3, 4, 6, 8, 0, 8, 76, 2, `1`]
+// let max = Math.max(...arr);
+
+// console.log(max)
+
+// Дан массив с числами. Используя Math.min и spread выведите на экран минимальное значение массива.
+
+// let arr = [1, 2, 3, 4, 5, 3, 4, 6, 8, 0, 8, 76, 2, `1`]
+// let max = Math.min(...arr);
+
+// console.log(max)
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [...arr1];
+
+// console.log(arr2);
+
+// Оператор spread для строк и чисел в JavaScript
+
+// ...'abcde'; // разобьет строку в символы через запятую: 'a','b','c','d','e'
+
+
+// function func(s1, s2, s3, s4, s5) {
+//     return s1 + '-' + s2 + '-' + s3 + '-' + s4 + '-' + s5;
+// }
+
+// console.log(func(...
+//     'asdfg'))
+
+
+// Оператор rest в JavaScript
+// function func(a, b) {
+// 	console.log(a);
+// 	console.log(b);
+// }
+
+// func(1, 2, 3, 4, 5);
+
+// function func(a, b, ...rest) {
+// 	console.log(a);    // выведет 1
+// 	console.log(b);    // выведет 2
+// 	console.log(rest); // выведет [3, 4, 5]
+// }
+
+// func(1, 2);
+
+// function func(a, b, ...rest) {
+// 	console.log(a);    // выведет 1
+// 	console.log(b);    // выведет 2
+// 	console.log(rest); // выведет []
+
+
+
+// function func(...nums) {
+//     let sum = 0;
+
+//     for (let num of nums) {
+//         sum += num;
+//     }
+
+//     return sum;
+// }
+
+// let result = func(1, 2, 3);
+// console.log(result); // выведет 6
+
+
+// Напишите функцию, которая будет принимать параметрами произвольное количество чисел и возвращать их среднее арифметическое.
+
+
+// function arithmeticMean(...nums) {
+//     let sumElem = 0
+//     let sumIndex = 0
+//     let result = nums.map(function sumArithmetic(elem, index) {
+//         sumElem += elem
+//         sumIndex += index
+//     })
+//     console.log(sumElem)
+//     console.log(sumIndex)
+//     return sumElem % sumIndex
+// }
+
+// console.log(arithmeticMean(1, 2, 4, 5, 6, 8, 9, 0))
+
+// let result = unite([1, 2, 3], [4, 5, 6], [7, 8, 9]);
+// console.log(result); // выведет [ [1, 2, 3,] [4, 5, 6], [7, 8, 9] ]
+
+
+// function unite(...arrs) {
+// 	return arrs;
+// }
+
+// let result = merge([1, 2, 3], [4, 5, 6], [7, 8, 9]);
+// console.log(result); // выведет [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+// merge([1, 2, 3], [4, 5, 6], [7, 8, 9]);
+
+// function merge(...arrs) {
+//     console.log(arrs); // выведет  [ [1, 2, 3,] [4, 5, 6], [7, 8, 9] ]
+// }
+
+// let arrs = [
+//     [1, 2, 3, ][4, 5, 6],
+//     [7, 8, 9]
+// ];
+
+// let result = [].concat(...arrs);
+// console.log(result); // выведет [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+// function merge(...arrs) {
+//     return [].concat(...arrs);
+// }
+
+// let result = merge([1, 2, 3], [4, 5, 6], [7, 8, 9]);
+// console.log(result); // выведет [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+// let arrs = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9]
+// ];
+
+// let result = [].concat(...arrs);
+// console.log(result); // выведет [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+
+// let arr = [2025, 12, 31];
+// let [year, month, day] = arr;
+
+// let arr = ['John', 'Smit', 'development', 'programmer', 2000];
+
+// let [name, surname, department, position, salary] = arr
+
+// console.log(name, surname)
+
+// function func() {
+//     return ['John', 'Smit', 'development', 'programmer', 2000];
+// }
+
+
+
+// let [name, surname, department, position, salary] = func()
+
+// console.log(name)
+
+
+// let arr = ['John', 'Smit', 'development', 'programmer', 2000];
+
+// // let department = arr[2];
+// // let position   = arr[3];
+
+// let [, , department, position] = arr
+
+// console.log(department)
+
+// let arr = ['John', 'Smit', 'development', 'programmer', 2000];
+
+// // let name = arr[0];
+// // let surname = arr[1];
+
+// // let info = arr.slice(2); // все элементы со второго до конца массива
+
+// let [name, surname, ...info] = arr
+
+// console.log(name)
+
+// let arr = ['John', 'Smit', 'development', 'programmer'];
+
+// let name       = arr[0];
+// let surname    = arr[1];
+// let department = arr[2];
+
+// let position;
+// if (arr[3] !== undefined) {
+// 	position = arr[3];
+// } else {
+// 	position = 'trainee';
+// }
+
+// let [name, surname, department, position = 'trainee', ] = arr
+
+// console.log(position)
+
+// function defaultDay() {
+//     return (new Date).getDate();
+// }
+
+// function defaultMonth() {
+//     return (new Date).getMonth();
+// }
+
+// function defaultYear() {
+//     return (new Date).getFullYear();
+// }
+
+// let arr = []
+// let [year = defaultYear(), month = defaultMonth(), day = defaultDay()] = arr;
+
+// console.log(year, month, day)
+
+// let options = {
+//     color: 'red',
+//     width: 400,
+//     height: 500,
+// };
+
+// let { color, width, height } = options
+
+// console.log(color)
+
+// let obj = {
+// 	year:  2025,
+// 	month: 12,
+// 	day:   31,
+// };
+
+// let {year: y, month: m, day: d} = obj;
+
+// console.log(y); // выведет 2025
+// console.log(m); // выведет 12
+// console.log(d); // выведет 31
+
+
+// let options = {
+//     width: 400,
+//     height: 500
+// };
+
+// // let с;
+// // if (options.с !== undefined) {
+// //     с = options.color;
+// // } else {
+// //     с = 'black';
+// // }
+
+// // let w = options.width;
+// // let h = options.height;
+
+// let { width: w, height: h, color: c = 'black' } = options
+
+// console.log(c)
+
+
+// function func([name, surname, department, position, salary]) {
+//     console.log(name)
+// }
+
+// func(['John', 'Smit', 'development', 'programmer', 2000]);
+
+
+// function func([name, surname, info, ...rest]) {
+//     console.log(info)
+// }
+
+// func(['John', 'Smit', 'development', 'programmer', 2000]);
+
+// function func([name, surname, department, position = 'джиниур']) {
+//     //     let name = employee[0];
+//     //     let surname = employee[1];
+//     //     let department = employee[2];
+
+//     //     let position;
+//     //     if (arr[3] !== undefined) {
+//     //         position = arr[3];
+//     //     } else {
+//     //         position = 'джуниор';
+//     //     }
+//     console.log(name)
+// }
+
+// func(['John', 'Smit', 'development']);
+
+// function func(department, [name, surname], [year, month, day]) {
+//     // let name = employee[0];
+//     // let surname = employee[1];
+
+//     // let year = hired[0];
+//     // let month = hired[1];
+//     // let day = hired[2];
+
+//     console.log(year)
+// }
+
+// func('development', ['John', 'Smit'], [2018, 12, 31]);
+
+
+// function func({ color, width, height }) {
+//     console.log(color)
+// }
+
+// func({ color: 'red', width: 400, height: 500 });
+
+
+// function func({ color = 'black', width, height }) {
+//     // let width = options.width;
+//     // let height = options.height;
+
+//     // let color;
+//     // if (options.color !== undefined) {
+//     //     color = options.color;
+//     // } else {
+//     //     color = 'black';
+//     // }
+
+//     console.log(color)
+// }
+
+// func({ color: 'red', width: 400, height: 500 });
+
+
+// let date = new Date()
+
+// console.log(date)
+
+// let date = new Date();
+
+// console.log(date.getFullYear()); // год
+// console.log(date.getMonth()); // месяц
+// console.log(date.getDate()); // день
+
+// console.log(date.getHours()); // часы
+// console.log(date.getMinutes()); // минуты
+// console.log(date.getSeconds()); // секунды
+
+// let date = new Date();
+// console.log(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate());
+
+// function addZero(num) {
+//     if (num >= 0 && num <= 9) {
+//         return '0' + num
+//     } else {
+//         return num
+//     }
+// }
+// console.log(
+//     addZero(date.getFullYear()) + '-' +
+//     addZero(date.getMonth() + 1) + '-' +
+//     addZero(date.getDate())
+// );
+
+
+// Выведите на экран текущую дату-время в формате 12:59:59 31.12.2014. 
+// Используйте для всех частей даты (кроме года) созданную нами функцию для добавления нуля при необходимости.
+
+// let date = new Date();
+
+// function addZero(num) {
+//     if (num >= 0 && num <= 9) {
+//         return '0' + num
+//     } else {
+//         return num
+//     }
+// }
+
+// console.log(
+//     addZero(date.getHours()) + ':' +
+//     addZero(date.getMinutes()) + ':' +
+//     addZero(date.getSeconds()) + ' ' +
+//     addZero(date.getFullYear()) + '.' +
+//     addZero(date.getMonth() + 1) + '.' +
+//     addZero(date.getDate())
+// );
+
+// Дана дата в формате год-месяц-день. Преобразуйте эту дату в формат день.месяц.год.
+
+// let num = '2012-12-12'
+// let res = num.split('-').reverse().join('.')
+
+// console.log(res)
+
+
+// let date = new Date();
+// console.log(date.getDay());
+
+// function isWeekend(date) {
+//     if (date == 7 && date == 0) {
+//         return 'Выходной'
+//     } else {
+//         return 'Будний день'
+//     }
+// }
+
+
+// console.log(isWeekend(date))
+
+// Определите сколько дней осталось до ближайшего воскресенья.
+
+// let date = new Date()
+// let dateWeek = date.getDay()
+
+// let res = function howDaystoWeekend(dateWeek) {
+//     let weekends = 8
+//     return weekends - dateWeek
+// }
+
+// console.log(res(dateWeek))
+
+// function daysUntilSunday() {
+//     let date = new Date()
+//     let today = date.getDay()
+//     let daysUntilSunday = 7 - today
+//     return daysUntilSunday
+// }
+
+// console.log(daysUntilSunday())
+
+
+// let date = new Date();
+// let day = date.getDay();
+// let month = date.getMonth();
+
+// let days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+// let months = [
+//     'янв', 'фев', 'мар', 'апр', 'май', 'июн',
+//     'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'
+// ];
+
+// console.log(months[month])
+// console.log(days[day])
+
+
+// let date = new Date(2025, 10, 5); // установим 5 ноября 2025 года
+// let day = date.getDay();
+// let days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+
+// console.log(days[day]);
+// let date = new Date(2025, 0, 1, 23, 59, 59);
+// console.log(date.getTime());
