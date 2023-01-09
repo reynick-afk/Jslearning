@@ -7650,3 +7650,101 @@
 // console.log(days[day]);
 // let date = new Date(2025, 0, 1, 23, 59, 59);
 // console.log(date.getTime());
+
+
+// let now = new Date(); // 2023, 1, 9, 21, 5, 23
+// let date = new Date(2015, 4, 25, 12, 59, 59);
+
+// let diff = now - date; // вычитаем два объекта с датами друг от друга
+// let days = Math.floor(diff / (1000 * 3600 * 24))
+// let month = Math.floor(days / 30)
+// let years = Math.floor(month / 12)
+// console.log(years); // увидим разницу в миллисекундах\
+
+// let date = new Date(2018, 1, 31);
+// console.log(date); // какая дата будет?
+
+
+// let date = new Date(2020, 3, 0)
+// console.log(date.getDate())
+
+// Оформите этот способ решения проблемы в виде функции, которая параметрами будет принимать месяц и год и 
+// возвращать номер последнего дня этого месяца.
+
+// function getLastDayOfMonth(month, year) {
+//     let date = new Date(year, month + 1, 0)
+//     return date.getDate()
+
+// }
+
+// let lastDay = getLastDayOfMonth(0, 2022)
+// console.log(lastDay)
+
+// Определите, какой день недели будет в последнем дне пятого месяца 2025 года.
+
+
+
+// function getLastDayOfMonth(month, year) {
+//     let date = new Date(year, month + 1, 0)
+//     let days = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб']
+//     let day = date.getDay()
+//     return days[day]
+
+// }
+
+// let lastDay = getLastDayOfMonth(4, 2025)
+// console.log(lastDay)
+
+// Сделайте функцию isLeap, которая параметром будет принимать год и возвращать true, если этого год високосный, и false - если нет.
+
+// let date = new Date(2020, 2, 0);
+// console.log(date.getDate())
+
+// function isLeap(year) {
+//     let date = new Date(year, 1, 0 + 1)
+//     if (date.getDate() == 29) {
+//         // console.log('Високосный')
+//         return true
+//     } else {
+//         // console.log('Обычный')
+//         return false
+//     }
+// }
+
+
+// console.log(isLeap(2022))
+
+
+// Сделайте функцию checkDate, которая будет выполнять описанную проверку. Пусть функция возвращает true, если дата корректна и false, если нет. 
+// Пример работы этой функции для 31 января и 32 января:
+
+// function checkDate(year, month, day) {
+//     let date = new Date(year, month, day)
+//     if (date.getFullYear() == year && date.getMonth() == month && date.getDate() == day) {
+
+//         return true
+//     } else {
+
+//         return false
+//     }
+// }
+
+// console.log(checkDate(2025, 0, 31))
+// console.log(checkDate(2025, 0, 32))
+
+// let now = new Date(); // получаем текущий момент
+// let date = new Date(now.getFullYear(), 11, 31); // получаем нашу дату
+// console.log(date.getDay());
+
+
+// let now = new Date();
+// let date = new Date(now.getFullYear(), now.getMonth(), 25 + 1);
+
+// console.log(date)
+
+// Определите, какой день недели будет 1 числа текущего месяца.
+
+// let now = new Date();
+// let date = new Date(now.getFullYear(), now.getMonth(), now.getDay(1 + 1));
+
+// console.log(date)
