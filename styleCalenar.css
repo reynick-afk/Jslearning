@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+* {
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color_title: slategray;
+    --month_days_width: 60px;
+    --month_days_height: 60px;
+}
+
+header {
+    display: block;
+    justify-content: column;
+}
+
+.calendar_title {
+    display: flex;
+    font-size: 4vw;
+    justify-content: center;
+    align-items: center;
+    color: var(--color_title);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.calendar_title_child {
+    padding: 0 20% 0 20%;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 4vw;
+}
+
+.calendar {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title_month {
+    font-family: var(--color_title);
+    text-transform: uppercase;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    font-size: 4vmin;
+    display: flex;
+    justify-content: center;
+}
+
+.month_days_name {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+}
+
+.month_days {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--month_days_width);
+    height: var(--month_days_height);
+    background-color: #ccc;
+}

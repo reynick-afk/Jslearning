@@ -34,6 +34,46 @@ p {
     position: relative;
 }
 
+div {
+    margin: 16px;
+    font-size: 96px;
+    color: rgb(23, 23, 24);
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 1s ease-in-out;
+    position: relative;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 26px;
+}
+
+button {
+    min-width: 300px;
+    font-family: inherit;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #4676d7;
+    color: #fff;
+    padding: 16px 32px;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 100px;
+}
+
 p::before {
     content: attr(data-item);
     transition: all 1s ease-in-out;
@@ -94,6 +134,12 @@ nav .menuItems li a:hover::before {
     transition: all 0.5s ease-in-out;
 }
 
+a:link {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 #myImg {
     cursor: pointer;
     transition: 0.3s;
@@ -107,4 +153,11 @@ nav .menuItems li a:hover::before {
     display: none;
     position: fixed;
     z-index: 1;
+}
+
+.squad_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
