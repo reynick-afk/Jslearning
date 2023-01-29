@@ -161,3 +161,22 @@ a:link {
     justify-content: center;
     align-items: center;
 }
+
+.width_height {
+    background-color: #2a078a;
+}
+
+.float_add {
+    float: right;
+}
+
+#elem_display {
+    display: none;
+    width: 200px;
+    height: 200px;
+    border: 1px solid green;
+}
+
+#elem_display.active {
+    display: block;
+}

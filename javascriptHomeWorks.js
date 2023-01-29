@@ -8191,3 +8191,81 @@ let getAtribut = document.querySelector('#getAtribut')
 let value = getAtribut.getAttribute('class')
 
 console.log(value)
+
+
+let elemOfClassList = document.querySelector('#elem_class_list')
+let elemOfClassListClass = elemOfClassList.classList
+
+elemOfClassList.classList.toggle('www')
+elemOfClassList.classList.add('xxx')
+elemOfClassList.classList.remove('zzz')
+
+for (let elem of elemOfClassListClass) {
+    console.log(elem)
+}
+
+console.log(elemOfClassList.classList.contains('ggg'))
+
+console.log(elemOfClassList.classList.length)
+
+
+let widthHeightLesson = document.querySelector('#width_height')
+
+widthHeightLesson.style.width = '350px'
+widthHeightLesson.style.height = '500px'
+widthHeightLesson.style.fontSize = '300px'
+
+
+
+let liFloatToggle = document.querySelectorAll('#li_float_toggle')
+let buttonFloatToggle = document.querySelector('#button_li_toggle')
+
+buttonFloatToggle.addEventListener('click', function() {
+    liFloatToggle.forEach(function(li) {
+        //     // li.classList.add('float_add')
+        //     // li.style.cssFloat = "right";
+        li.classList.toggle('float_add')
+    })
+
+
+    // liFloatToggle.classList.add('float_add')
+    // liFloatToggle.classList.toggle('float_add')
+})
+
+
+let buttonDisplay = document.querySelector('#button_display');
+let elemDisplay = document.querySelector('#elem_display');
+
+buttonDisplay.addEventListener('click', function() {
+    elemDisplay.classList.toggle('active');
+});
+
+
+const addBlockBtn = document.querySelector('#addBlockBtn');
+const removeBlockBtn = document.querySelector('#removeBlockBtn')
+const uiContainer = document.querySelector('#uiContainer');
+
+let clickCount = 0;
+
+addBlockBtn.addEventListener('click', function() {
+
+    clickCount++;
+    if (clickCount >= 3) {
+        button.style.opacity = 0.5;
+        button.style.cursor = "not-allowed";
+        button.disabled = true;
+    }
+
+
+    const newBlock = document.createElement('div');
+    newBlock.style.backgroundColor = 'lightblue';
+    newBlock.style.width = '200px';
+    newBlock.style.height = '200px';
+    newBlock.style.margin = '10px';
+    uiContainer.appendChild(newBlock);
+
+});
+
+removeBlockBtn.addEventListener('click', function() {
+    uiContainer.lastElementChild.remove('div')
+})
