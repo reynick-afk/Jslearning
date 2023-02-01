@@ -8269,3 +8269,59 @@ addBlockBtn.addEventListener('click', function() {
 removeBlockBtn.addEventListener('click', function() {
     uiContainer.lastElementChild.remove('div')
 })
+
+
+
+const elemChildren = document.querySelector('#elemChildren')
+
+let elemLastChildren = elemChildren.lastElementChild
+let elemChildrenAll = elemChildren.children
+
+
+for (let i = 0; i < elemChildrenAll.length; i++) {
+    elemChildrenAll[i].innerHTML += '!'
+}
+
+console.log(elemChildrenAll)
+    // console.log(elemLastChildren)
+
+elemLastChildren.style.color = "red"
+
+// console.log(elemChildren.firstChild)
+
+
+const elemParent = document.querySelector('#elemParent')
+let elemParentBorder = elemParent.parentElement.style.border = "thick solid red"
+
+
+
+
+const elemOfFaststes = document.querySelector('#elemOfFaststes')
+
+console.log(elemOfFaststes.closest('div'))
+
+
+
+
+const elemOfFaststesSec = document.querySelector('#elemOfFaststesSec')
+
+console.log(elemOfFaststesSec.closest('.www'))
+
+
+const elemById = document.getElementById('elemById')
+
+elemById.textContent = 'asdaddadaddadad'
+
+
+// const getElementsByTag = document.getElementsByTagName('li')
+
+// for (let elem of getElementsByTag) {
+//     elem.style.color = 'red'
+// }
+
+
+const elemOfClassName = document.getElementsByClassName('www')
+
+for (let elem of elemOfClassName) {
+    elem.style.color = 'red'
+}
